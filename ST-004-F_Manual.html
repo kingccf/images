@@ -1,0 +1,3220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Sintron ST-004 / ST-004-F / ST-005 — Instruction Manual</title>
+    <style>
+      :root {
+        --ink: #1f1f1f;
+        --body: #3d3d3d;
+        --fine: #8a8a8a;
+        --base: #f4f3f0;
+        --gold: #c9962e;
+        --lcd: #5fa8e8;
+        --guide: #c9c9c9;
+        --chip: #d8d6d0;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, Helvetica, "Segoe UI", sans-serif;
+        font-size: 14pt;
+        line-height: 1.65;
+        color: var(--body);
+        background: var(--base);
+        margin: 0;
+        padding: 0;
+      }
+      .wrap {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 28px 72px;
+      }
+      .masthead {
+        background: var(--ink);
+        color: #fff;
+        margin: 0 -28px 0;
+        padding: 44px 44px 38px;
+        border-bottom: 7px solid var(--gold);
+      }
+      .masthead .brand {
+        font-size: 11pt;
+        letter-spacing: 3px;
+        font-weight: bold;
+        color: var(--gold);
+        margin: 0 0 14px;
+      }
+      .masthead h1 {
+        font-size: 27pt;
+        font-weight: bold;
+        margin: 0 0 10px;
+        color: #fff;
+        line-height: 1.2;
+        letter-spacing: -0.3px;
+      }
+      .masthead .sub {
+        font-size: 12.5pt;
+        color: #d8d6d0;
+        margin: 0;
+      }
+      .masthead .models {
+        margin: 22px 0 0;
+      }
+      .masthead .models span {
+        display: inline-block;
+        border: 1.5px solid var(--gold);
+        color: var(--gold);
+        border-radius: 16px;
+        padding: 3px 14px;
+        font-size: 10pt;
+        font-weight: bold;
+        margin: 0 7px 6px 0;
+        letter-spacing: 0.5px;
+      }
+      #lang-bar {
+        background: #fff;
+        border: 1px solid var(--chip);
+        border-left: 5px solid var(--gold);
+        border-radius: 3px;
+        padding: 9px 16px;
+        margin: 22px 0 0;
+        font-size: 10.5pt;
+        color: var(--body);
+      }
+      #lang-bar select {
+        border: 1px solid var(--guide);
+        border-radius: 3px;
+        padding: 3px 8px;
+        font-size: 10.5pt;
+        font-family: Arial, sans-serif;
+        background: #fff;
+        cursor: pointer;
+        outline: none;
+        color: var(--ink);
+      }
+      .goog-te-banner-frame {
+        display: none !important;
+      }
+      body {
+        top: 0 !important;
+      }
+      .skiptranslate {
+        display: none !important;
+      }
+      nav.toc {
+        background: #fff;
+        border: 1px solid var(--chip);
+        border-left: 5px solid var(--gold);
+        border-radius: 3px;
+        padding: 26px 32px;
+        margin: 22px 0 40px;
+      }
+      nav.toc h2 {
+        font-size: 11pt;
+        letter-spacing: 2.5px;
+        color: var(--fine);
+        margin: 0 0 16px;
+        padding: 0;
+        background: none;
+        border: none;
+        font-weight: bold;
+      }
+      nav.toc ol {
+        margin: 0;
+        padding-left: 22px;
+      }
+      nav.toc li {
+        margin: 6px 0;
+      }
+      nav.toc a {
+        color: var(--ink);
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 11pt;
+      }
+      nav.toc a:hover {
+        color: var(--gold);
+      }
+      nav.toc ol ol {
+        margin: 5px 0 5px;
+        padding-left: 20px;
+      }
+      nav.toc ol ol a {
+        font-weight: normal;
+        color: var(--body);
+        font-size: 10.5pt;
+      }
+      section {
+        background: #fff;
+        border-left: 6px solid var(--gold);
+        border-radius: 3px;
+        padding: 30px 34px 26px;
+        margin: 0 0 26px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+      }
+      h2 {
+        font-size: 16.5pt;
+        font-weight: bold;
+        color: var(--ink);
+        margin: 0 0 6px;
+        line-height: 1.3;
+        letter-spacing: -0.2px;
+      }
+      h2 .part {
+        display: block;
+        font-size: 9.5pt;
+        letter-spacing: 2.5px;
+        color: var(--gold);
+        font-weight: bold;
+        margin: 0 0 7px;
+      }
+      .rule {
+        width: 56px;
+        height: 4px;
+        background: var(--gold);
+        margin: 0 0 20px;
+      }
+      h3 {
+        font-size: 12.5pt;
+        font-weight: bold;
+        color: var(--ink);
+        margin: 26px 0 8px;
+      }
+      h4 {
+        font-size: 11.5pt;
+        font-weight: bold;
+        color: var(--ink);
+        margin: 18px 0 6px;
+      }
+      p {
+        margin: 0 0 12px;
+      }
+      ul,
+      ol {
+        margin: 0 0 14px;
+        padding-left: 24px;
+      }
+      li {
+        margin: 5px 0;
+      }
+      a {
+        color: #8a6a1d;
+        text-decoration: none;
+        border-bottom: 1px solid var(--chip);
+      }
+      a:hover {
+        color: var(--gold);
+        border-bottom-color: var(--gold);
+      }
+      strong {
+        color: var(--ink);
+      }
+      .lead {
+        font-size: 12.5pt;
+        color: var(--body);
+        line-height: 1.7;
+      }
+      .table-wrap {
+        overflow-x: auto;
+        margin: 16px 0 18px;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 10.5pt;
+      }
+      th {
+        background: var(--ink);
+        color: #fff;
+        padding: 10px 12px;
+        text-align: left;
+        font-weight: bold;
+        font-size: 10pt;
+        letter-spacing: 0.4px;
+        border: 1px solid var(--ink);
+      }
+      td {
+        border: 1px solid var(--chip);
+        padding: 9px 12px;
+        vertical-align: top;
+        color: var(--body);
+      }
+      tr:nth-child(even) td {
+        background: #fafaf9;
+      }
+      td strong {
+        color: var(--ink);
+      }
+      table.spec td:first-child {
+        width: 38%;
+        font-weight: bold;
+        color: var(--ink);
+        background: #fafaf9;
+      }
+      table.spec tr:nth-child(even) td:first-child {
+        background: #f4f3f0;
+      }
+      .note,
+      .warn,
+      .newbox {
+        border: 1px solid var(--chip);
+        border-left: 5px solid var(--gold);
+        background: #fbfaf8;
+        border-radius: 3px;
+        padding: 16px 20px;
+        margin: 16px 0 18px;
+      }
+      .warn {
+        border-left-color: var(--ink);
+        background: #f7f6f4;
+      }
+      .crit {
+        color: #b3261e;
+        font-weight: bold;
+      }
+      .note .label,
+      .warn .label,
+      .newbox .label {
+        display: block;
+        font-size: 9.5pt;
+        letter-spacing: 2px;
+        font-weight: bold;
+        color: var(--fine);
+        margin: 0 0 7px;
+      }
+      .warn .label {
+        color: var(--ink);
+      }
+      .note p:last-child,
+      .warn p:last-child,
+      .newbox p:last-child,
+      .note ul:last-child,
+      .warn ul:last-child,
+      .newbox ul:last-child {
+        margin-bottom: 0;
+      }
+      .draft {
+        border: 2px dashed var(--gold);
+        background: #fffdf7;
+        border-radius: 3px;
+        padding: 14px 18px;
+        margin: 16px 0;
+        font-size: 10.5pt;
+        color: var(--body);
+      }
+      .draft .label {
+        display: block;
+        font-size: 9.5pt;
+        letter-spacing: 1.5px;
+        font-weight: bold;
+        color: var(--gold);
+        margin: 0 0 6px;
+      }
+      .pill {
+        display: inline-block;
+        background: var(--ink);
+        color: #fff;
+        border-radius: 15px;
+        padding: 3px 14px;
+        font-size: 9.5pt;
+        font-weight: bold;
+        letter-spacing: 0.4px;
+        margin: 0 6px 5px 0;
+      }
+      .pill.gold {
+        background: var(--gold);
+      }
+      .chip {
+        display: inline-block;
+        background: #fff;
+        border: 1.5px solid var(--chip);
+        border-radius: 3px;
+        padding: 4px 12px;
+        font-size: 10pt;
+        font-weight: bold;
+        color: var(--ink);
+        margin: 0 7px 7px 0;
+      }
+      .chip.gold {
+        border-color: var(--gold);
+      }
+      a.video {
+        display: inline-block;
+        border: 1.5px solid var(--gold);
+        border-bottom: 1.5px solid var(--gold);
+        border-radius: 3px;
+        padding: 6px 15px;
+        margin: 5px 8px 8px 0;
+        font-size: 10.5pt;
+        font-weight: bold;
+        color: var(--ink);
+        background: #fff;
+      }
+      a.video::before {
+        content: "\25B6  ";
+        color: var(--gold);
+      }
+      a.video:hover {
+        background: #fbf7ee;
+      }
+      ol.steps {
+        counter-reset: s;
+        list-style: none;
+        padding-left: 0;
+        margin: 16px 0 18px;
+      }
+      ol.steps > li {
+        counter-increment: s;
+        position: relative;
+        padding: 0 0 0 42px;
+        margin: 0 0 16px;
+        min-height: 28px;
+      }
+      ol.steps > li::before {
+        content: counter(s);
+        position: absolute;
+        left: 0;
+        top: 1px;
+        width: 27px;
+        height: 27px;
+        line-height: 27px;
+        text-align: center;
+        background: var(--gold);
+        color: #fff;
+        border-radius: 50%;
+        font-size: 11pt;
+        font-weight: bold;
+      }
+      .lcd {
+        display: inline-block;
+        background: #101010;
+        border: 2px solid var(--guide);
+        border-radius: 4px;
+        padding: 12px 22px;
+        margin: 6px 10px 10px 0;
+        text-align: center;
+        min-width: 220px;
+        vertical-align: top;
+      }
+      .lcd.you {
+        border-color: var(--gold);
+        border-width: 3px;
+      }
+      .lcd .l1 {
+        color: #fff;
+        font-weight: bold;
+        font-size: 11pt;
+        line-height: 1.5;
+      }
+      .lcd .l2 {
+        color: var(--lcd);
+        font-size: 10.5pt;
+        line-height: 1.5;
+      }
+      .lcd-cap {
+        display: block;
+        font-size: 9.5pt;
+        letter-spacing: 1.8px;
+        color: var(--fine);
+        font-weight: bold;
+        margin: 0 0 4px;
+      }
+      .ph {
+        border: 2px dashed var(--gold);
+        background: #fbfaf8;
+        border-radius: 3px;
+        padding: 40px 20px;
+        text-align: center;
+        margin: 14px 0;
+      }
+      .ph .fn {
+        display: block;
+        font-size: 10pt;
+        letter-spacing: 1.5px;
+        font-weight: bold;
+        color: var(--gold);
+        margin: 0 0 6px;
+      }
+      .ph .ds {
+        display: block;
+        font-size: 11pt;
+        color: var(--fine);
+      }
+      .screens {
+        margin: 16px 0 10px;
+      }
+      .scr-row {
+        display: flex;
+        gap: 22px;
+        align-items: flex-start;
+        flex-wrap: wrap;
+      }
+      .scr-wrap {
+        flex: 0 0 auto;
+        width: 250px;
+      }
+      .scr-bezel {
+        background: #0b0b0b;
+        border-radius: 7px;
+        padding: 12px;
+        box-shadow: inset 0 0 0 1px #2a2a2a;
+      }
+      .scr {
+        background: linear-gradient(180deg, #222c48 0%, #0e1426 100%);
+        border-radius: 3px;
+        width: 226px;
+        height: 158px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 6px;
+        overflow: hidden;
+      }
+      .scr-t {
+        color: #fff;
+        font-weight: bold;
+        font-size: 10.5pt;
+        line-height: 1.25;
+      }
+      .scr-v {
+        color: var(--lcd);
+        font-weight: bold;
+        font-size: 25pt;
+        line-height: 1.05;
+        margin: 7px 0 0;
+      }
+      .scr-u {
+        color: #fff;
+        font-weight: bold;
+        font-size: 9.5pt;
+        margin: 5px 0 0;
+      }
+      .scr-s {
+        color: var(--lcd);
+        font-size: 8.5pt;
+        line-height: 1.45;
+        margin: 5px 0 0;
+      }
+      .scr-ok {
+        color: #8fe3a0;
+        font-weight: bold;
+        font-size: 9.5pt;
+        margin: 6px 0 0;
+      }
+      .scr.dense .scr-t {
+        font-size: 9.5pt;
+      }
+      .scr.dense .scr-v {
+        font-size: 15pt;
+        margin: 1px 0 0;
+      }
+      .scr.dense .scr-u {
+        font-size: 8.5pt;
+        margin: 2px 0 0;
+      }
+      .scr.dense .scr-ok {
+        font-size: 9pt;
+        margin: 6px 0 0;
+      }
+      .scr.pair .scr-t {
+        font-size: 10pt;
+        line-height: 1.2;
+      }
+      .scr.pair .scr-v {
+        font-size: 25pt;
+        line-height: 1.05;
+        margin: 3px 0 0;
+      }
+      .scr.pair .scr-v + .scr-t {
+        margin-top: 11px;
+      }
+      .scr.msg .scr-t {
+        font-size: 14pt;
+        line-height: 1.35;
+      }
+      .scr.instr .scr-t {
+        font-size: 12pt;
+        line-height: 1.25;
+      }
+      .scr.instr .scr-s {
+        font-size: 10.5pt;
+        line-height: 1.5;
+        margin-top: 7px;
+      }
+      .scr.confirm .scr-t {
+        font-size: 10pt;
+        line-height: 1.2;
+      }
+      .scr.confirm .scr-v {
+        font-size: 19pt;
+        line-height: 1.05;
+        margin: 2px 0 0;
+      }
+      .scr.confirm .scr-v + .scr-t {
+        margin-top: 5px;
+      }
+      .scr.confirm .scr-u {
+        font-size: 9pt;
+        line-height: 1.2;
+        margin: 2px 0 0;
+      }
+      .scr.confirm .scr-ok {
+        font-size: 9.5pt;
+        line-height: 1.2;
+        margin: 6px 0 0;
+      }
+      .scr.lines {
+        justify-content: center;
+      }
+      .scr.lines .ln {
+        display: block;
+        color: var(--lcd);
+        font-size: 10pt;
+        line-height: 1.3;
+        white-space: nowrap;
+      }
+      .scr.lines .ln.b {
+        font-weight: bold;
+        color: #fff;
+      }
+      .scr.lines .ln.e {
+        color: transparent;
+      }
+      .pairview {
+        display: flex;
+        gap: 22px;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin: 16px 0 10px;
+      }
+      .pairview .left {
+        flex: 1 1 300px;
+        min-width: 280px;
+      }
+      .pairview .left .wpage {
+        margin: 0;
+      }
+      .pairview .right {
+        flex: 0 0 auto;
+        width: 250px;
+      }
+      .pairview .arrow {
+        align-self: center;
+        color: var(--gold);
+        font-size: 22pt;
+        font-weight: bold;
+      }
+      @media (max-width: 640px) {
+        .pairview .left,
+        .pairview .right {
+          flex: 1 1 100%;
+          width: auto;
+        }
+        .pairview .arrow {
+          display: none;
+        }
+        .scr.lines .ln {
+          font-size: 6.5pt;
+        }
+      }
+      .scr-cap {
+        display: block;
+        font-size: 10pt;
+        color: var(--fine);
+        text-align: center;
+        margin: 8px 0 0;
+      }
+      .scr-arrow {
+        align-self: flex-start;
+        color: var(--gold);
+        font-size: 22pt;
+        font-weight: bold;
+        margin-top: 56px;
+      }
+      .webui {
+        background: #3c8d70;
+        border-radius: 6px;
+        padding: 20px 24px;
+        margin: 16px 0 10px;
+        color: #fff;
+      }
+      .webui .row {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin: 0 0 12px;
+      }
+      .webui .row:last-child {
+        margin-bottom: 0;
+      }
+      .webui label {
+        font-size: 11.5pt;
+      }
+      .webui .fld {
+        background: #fff;
+        color: #12203c;
+        border: 2px solid #cfd8d4;
+        border-radius: 5px;
+        padding: 5px 12px;
+        font-size: 11.5pt;
+        min-width: 56px;
+        display: inline-block;
+      }
+      .webui .fld.wide {
+        min-width: 230px;
+      }
+      .webui .help {
+        font-size: 10pt;
+        line-height: 1.5;
+        margin: 0 0 12px;
+      }
+      .webui .help em {
+        color: #9fe8e0;
+        font-style: normal;
+      }
+      .webui .colon {
+        font-size: 12pt;
+        font-weight: bold;
+      }
+      .wpage {
+        background: #dcede4;
+        padding: 9px;
+        margin: 16px 0 12px;
+        border-radius: 5px;
+      }
+      .wpage .wbar,
+      .wpage .wcard {
+        background: #3c8d70;
+        color: #fff;
+        margin: 0 0 8px;
+      }
+      .wpage .wbar {
+        padding: 11px 18px;
+        font-weight: bold;
+      }
+      .wpage .wtitle {
+        font-size: 15pt;
+      }
+      .wpage .wsupport {
+        font-size: 11.5pt;
+        margin-bottom: 11px;
+      }
+      .wpage .wcard {
+        padding: 15px 18px;
+      }
+      .wpage .wcard:last-child {
+        margin-bottom: 0;
+      }
+      .wpage .wrow {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        flex-wrap: wrap;
+        margin: 0 0 10px;
+      }
+      .wpage .wrow:last-child {
+        margin-bottom: 0;
+      }
+      .wpage label {
+        font-size: 11.5pt;
+      }
+      .wpage .fld {
+        background: #fff;
+        color: #12203c;
+        border: 2px solid #cfd8d4;
+        border-radius: 5px;
+        padding: 5px 12px;
+        font-size: 11.5pt;
+        min-width: 60px;
+        display: inline-block;
+      }
+      .wpage .fld.wide {
+        min-width: 190px;
+      }
+      .wpage .whelp {
+        font-size: 10pt;
+        line-height: 1.55;
+        margin: 11px 0 0;
+      }
+      .wpage .wlab {
+        font-size: 11.5pt;
+        margin: 0 0 9px;
+      }
+      .wpage .wchecks {
+        font-size: 11.5pt;
+        margin: 0;
+      }
+      .wpage .wchecks .item {
+        margin-right: 26px;
+        white-space: nowrap;
+      }
+      .wpage .cb {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        border: 1px solid #b9c6c1;
+        background: #fff;
+        border-radius: 2px;
+        margin-right: 6px;
+        vertical-align: -2px;
+        line-height: 13px;
+        text-align: center;
+        font-size: 9.5pt;
+        font-weight: bold;
+      }
+      .wpage .cb.on {
+        background: #2f6fed;
+        border-color: #2f6fed;
+        color: #fff;
+      }
+      .wpage .rb {
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background: #fff;
+        border: 1px solid #b9c6c1;
+        margin-right: 7px;
+        vertical-align: -2px;
+      }
+      .wpage .rb.on {
+        border: 4px solid #2f6fed;
+        width: 13px;
+        height: 13px;
+        box-sizing: border-box;
+      }
+      .wpage .opts {
+        font-size: 11.5pt;
+        margin: 0;
+        line-height: 1.9;
+      }
+      .wpage .opts span.o {
+        display: block;
+      }
+      .wpage .sel {
+        background: #fff;
+        color: #12203c;
+        border: 1px solid #cfd8d4;
+        border-radius: 3px;
+        padding: 3px 8px;
+        font-size: 11pt;
+        display: inline-block;
+      }
+      .wpage .sel::after {
+        content: " \25BE";
+        color: #5a6b66;
+      }
+      .wpage .wlab .cb {
+        margin-right: 9px;
+      }
+      .wpage .savebtn {
+        background: #3c8d70;
+        color: #fff;
+        font-size: 12pt;
+        padding: 14px 22px;
+        border: 2px solid #c9962e;
+        border-radius: 3px;
+        display: inline-block;
+        font-family: inherit;
+      }
+      .wpage .lines7 .fld {
+        width: 216px;
+        min-width: 0;
+        max-width: 100%;
+      }
+      .wpage .lines7 label {
+        width: 56px;
+        flex: 0 0 auto;
+      }
+      @media (max-width: 640px) {
+        .wpage .lines7 .fld {
+          width: 100%;
+        }
+      }
+      .wpage.compact {
+        padding: 5px;
+      }
+      .wpage.compact .wcard {
+        padding: 7px 9px;
+      }
+      .wpage.compact .wlab {
+        font-size: 7.5pt;
+        margin: 0 0 4px;
+      }
+      .wpage.compact .wrow {
+        gap: 5px;
+        margin: 0 0 4px;
+      }
+      .wpage.compact label {
+        font-size: 7.5pt;
+      }
+      .wpage.compact .fld {
+        padding: 2px 6px;
+        font-size: 7.5pt;
+      }
+      .wpage.compact .lines7 .fld {
+        width: 110px;
+      }
+      .wpage.compact .lines7 label {
+        width: 34px;
+      }
+      table.legend {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 10px 0 4px;
+        font-size: 10.5pt;
+      }
+      table.legend td {
+        border: none;
+        padding: 5px 10px 5px 0;
+        vertical-align: top;
+        width: 33.33%;
+        background: none !important;
+      }
+      table.legend .n {
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        line-height: 20px;
+        text-align: center;
+        background: #fff;
+        color: var(--ink);
+        border: 1.5px solid var(--ink);
+        border-radius: 50%;
+        font-weight: bold;
+        font-size: 9.5pt;
+        margin-right: 7px;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 3px;
+        border: 1px solid var(--chip);
+      }
+      .img-row {
+        margin: 10px 0 14px;
+      }
+      .img-row img {
+        margin: 0 10px 10px 0;
+        max-width: 47%;
+      }
+      figure {
+        margin: 14px 0;
+      }
+      figcaption {
+        font-size: 9.5pt;
+        color: var(--fine);
+        margin-top: 6px;
+      }
+      table.kit {
+        border-collapse: separate;
+        border-spacing: 10px;
+        width: 100%;
+        margin: 14px 0;
+      }
+      table.kit td {
+        border: 1.5px solid var(--chip);
+        border-radius: 3px;
+        background: #fff;
+        padding: 14px 12px;
+        text-align: center;
+        width: 16.6%;
+        vertical-align: middle;
+      }
+      table.kit td .qty {
+        display: inline-block;
+        background: var(--gold);
+        color: #fff;
+        border-radius: 12px;
+        padding: 1px 9px;
+        font-size: 9pt;
+        font-weight: bold;
+        margin-left: 5px;
+      }
+      table.kit td .nm {
+        font-weight: bold;
+        color: var(--ink);
+        font-size: 10.5pt;
+        white-space: nowrap;
+      }
+      .customer {
+        background: var(--ink);
+        color: #fff;
+        border-radius: 3px;
+        padding: 34px 38px;
+        margin: 0 0 26px;
+        border-left: 6px solid var(--gold);
+      }
+      .customer h2 {
+        color: #fff;
+      }
+      .customer .rule {
+        background: var(--gold);
+      }
+      .customer h3 {
+        color: var(--gold);
+        margin-top: 22px;
+      }
+      .customer p,
+      .customer li {
+        color: #e4e2de;
+      }
+      .customer strong {
+        color: #fff;
+      }
+      .customer .opt {
+        border-top: 1px solid #3a3a3a;
+        padding-top: 16px;
+        margin-top: 16px;
+      }
+      .btnrow {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin: 16px 0 8px;
+      }
+      .btnrow .btn {
+        flex: 1 1 170px;
+        background: #fff;
+        border: 1.5px solid var(--chip);
+        border-top: 3px solid var(--gold);
+        border-radius: 3px;
+        padding: 12px 14px;
+      }
+      .btnrow .btn.dim {
+        border-top-color: var(--chip);
+      }
+      .btnrow .nm {
+        display: block;
+        font-weight: bold;
+        color: var(--ink);
+        font-size: 12pt;
+        letter-spacing: 0.6px;
+      }
+      .btnrow .role {
+        display: block;
+        font-size: 10.5pt;
+        color: var(--body);
+        margin-top: 5px;
+        line-height: 1.4;
+      }
+      @media (max-width: 640px) {
+        .btnrow .btn {
+          flex: 1 1 100%;
+        }
+      }
+      .dl {
+        display: flex;
+        gap: 26px;
+        flex-wrap: wrap;
+        margin: 16px 0 6px;
+      }
+      .dl .box {
+        text-align: center;
+      }
+      .dl .qr {
+        display: block;
+        background: #fff;
+        padding: 3mm;
+        border-radius: 3px;
+      }
+      .dl .cap {
+        font-size: 10.5pt;
+        font-weight: bold;
+        margin: 8px 0 0;
+        line-height: 1.35;
+      }
+      .customer .dl .cap {
+        color: #fff;
+      }
+      .customer .dl .cap span {
+        display: block;
+        font-weight: normal;
+        color: #b8b5b0;
+        font-size: 9.5pt;
+      }
+      .priceline {
+        background: #2a2a2a;
+        border-left: 3px solid var(--gold);
+        padding: 14px 18px;
+        margin: 0 0 20px;
+        font-size: 14pt;
+        color: #fff;
+        line-height: 2;
+      }
+      .priceline .bl {
+        display: inline-block;
+        min-width: 110px;
+        border-bottom: 1.5px solid #fff;
+        margin: 0 6px;
+      }
+      .ownerbar {
+        background: var(--gold);
+        color: #fff;
+        padding: 13px 18px;
+        margin: 0 0 20px;
+        font-size: 11pt;
+        line-height: 1.55;
+      }
+      .ownerbar strong {
+        color: #fff;
+      }
+      footer {
+        text-align: center;
+        font-size: 9.5pt;
+        color: var(--fine);
+        padding: 26px 0 0;
+        border-top: 1px solid var(--chip);
+        margin-top: 34px;
+      }
+      @page {
+        size: A4;
+        margin: 15mm 14mm 16mm;
+      }
+      @media print {
+        body {
+          background: #fff;
+          font-size: 10pt;
+        }
+        .wrap {
+          max-width: none;
+          padding: 0;
+        }
+        #lang-bar {
+          display: none;
+        }
+        .masthead {
+          margin: 0 0 18px;
+          padding: 26px 28px;
+          border-bottom-width: 5px;
+        }
+        .masthead h1 {
+          font-size: 21pt;
+        }
+        section {
+          box-shadow: none;
+          border: 1px solid #e4e2de;
+          border-left: 5px solid var(--gold);
+          padding: 20px 22px 16px;
+          margin: 0 0 14px;
+          page-break-inside: auto;
+        }
+        h2,
+        h3,
+        h4 {
+          page-break-after: avoid;
+          break-after: avoid;
+        }
+        table,
+        .note,
+        .warn,
+        .draft,
+        ol.steps > li,
+        figure,
+        .img-row,
+        table.kit,
+        .lcd,
+        .screens {
+          page-break-inside: avoid;
+          break-inside: avoid;
+        }
+        .scr-wrap {
+          width: 182px;
+        }
+        .scr {
+          width: 164px;
+          height: 115px;
+          padding: 4px;
+        }
+        .scr-t {
+          font-size: 8pt;
+        }
+        .scr-v {
+          font-size: 18pt;
+          margin-top: 5px;
+        }
+        .scr-u {
+          font-size: 7pt;
+        }
+        .scr-s {
+          font-size: 6.5pt;
+        }
+        .scr-ok {
+          font-size: 7pt;
+        }
+        .scr.dense .scr-t {
+          font-size: 7pt;
+        }
+        .scr.dense .scr-v {
+          font-size: 11pt;
+        }
+        .scr.dense .scr-u {
+          font-size: 6.5pt;
+        }
+        .scr.dense .scr-ok {
+          font-size: 6.5pt;
+        }
+        .scr.pair .scr-t {
+          font-size: 7.5pt;
+        }
+        .scr.pair .scr-v {
+          font-size: 18pt;
+        }
+        .scr.msg .scr-t {
+          font-size: 10pt;
+        }
+        .scr.instr .scr-t {
+          font-size: 8.5pt;
+        }
+        .scr.instr .scr-s {
+          font-size: 7.5pt;
+        }
+        .scr.confirm .scr-t {
+          font-size: 7.5pt;
+        }
+        .scr.confirm .scr-v {
+          font-size: 13.5pt;
+        }
+        .scr.confirm .scr-u {
+          font-size: 6.5pt;
+        }
+        .scr.confirm .scr-ok {
+          font-size: 7pt;
+        }
+        .scr.lines .ln {
+          font-size: 6.5pt;
+        }
+        .pairview .arrow {
+          display: none;
+        }
+        .scr-cap {
+          font-size: 8pt;
+        }
+        .scr-arrow {
+          font-size: 16pt;
+          margin-top: 42px;
+        }
+        p,
+        li {
+          orphans: 2;
+          widows: 2;
+        }
+        section > *:first-child {
+          page-break-before: avoid;
+        }
+        a {
+          border-bottom: none;
+          color: var(--body);
+        }
+        a.video {
+          border: 1px solid var(--gold);
+        }
+        nav.toc {
+          page-break-after: always;
+        }
+        .customer {
+          page-break-before: always;
+          background: #fff !important;
+          color: var(--body) !important;
+          border: 1px solid #e4e2de;
+          border-left: 5px solid var(--gold);
+        }
+        .customer h2,
+        .customer strong {
+          color: var(--ink) !important;
+        }
+        .customer h3 {
+          color: var(--gold) !important;
+        }
+        .customer p,
+        .customer li {
+          color: var(--body) !important;
+        }
+        .customer .opt {
+          border-top-color: var(--chip);
+        }
+        .customer .priceline {
+          background: var(--pale) !important;
+          color: var(--ink) !important;
+        }
+        .customer .priceline .bl {
+          border-bottom-color: var(--ink);
+        }
+        .customer .dl .cap {
+          color: var(--ink) !important;
+        }
+        .customer .dl .cap span {
+          color: var(--fine) !important;
+        }
+        .ownerbar {
+          display: none !important;
+        }
+      }
+      @media (max-width: 640px) {
+        .wrap {
+          padding: 0 14px 48px;
+        }
+        .masthead {
+          margin: 0 -14px 0;
+          padding: 28px 20px 24px;
+        }
+        .masthead h1 {
+          font-size: 19pt;
+        }
+        section {
+          padding: 22px 18px 18px;
+        }
+        h2 {
+          font-size: 14pt;
+        }
+        .img-row img {
+          max-width: 100%;
+        }
+        table.kit td {
+          display: block;
+          width: auto;
+        }
+        table {
+          font-size: 9.5pt;
+        }
+        th,
+        td {
+          padding: 7px 9px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- ══════════ MASTHEAD ══════════ -->
+      <header class="masthead">
+        <p class="brand">SINTRON</p>
+        <h1>Smart Coin &amp; Cashless Payment Timer<br />Instruction Manual</h1>
+        <div class="models">
+          <span>ST-004</span><span>ST-004-F</span><span>ST-005</span><span>ST-005-F</span>
+        </div>
+      </header>
+
+      <!-- Language selector -->
+      <div id="lang-bar" class="notranslate" translate="no">
+        🌐 Language:
+        <select id="lang-select" onchange="changeLanguage(this.value)">
+          <option selected value="en">English</option>
+          <option value="de">Deutsch</option>
+          <option value="fr">Français</option>
+          <option value="es">Español</option>
+          <option value="it">Italiano</option>
+          <option value="el">Ελληνικά</option>
+          <option value="ar">العربية</option>
+          <option value="ja">日本語</option>
+          <option value="ko">한국어</option>
+          <option value="zh-TW">繁體中文</option>
+          <option value="zh-CN">简体中文</option>
+        </select>
+      </div>
+      <div style="display: none" id="google_translate_element"></div>
+
+      <!-- ══════════ TOC ══════════ -->
+      <nav class="toc">
+        <h2>CONTENTS</h2>
+        <ol>
+          <li><a href="#intro">Product Introduction</a></li>
+          <li><a href="#spec">Specification</a></li>
+          <li><a href="#kit">What&rsquo;s in the Box</a></li>
+          <li><a href="#quickstart">Quick Start</a></li>
+          <li>
+            <a href="#part1"
+              >Part 1 &mdash; Coin Acceptor &amp; Timer Settings</a
+            >
+            <ol>
+              <li><a href="#coin-setup">Sintron ST-001 Coin Setup</a></li>
+            </ol>
+          </li>
+          <li>
+            <a href="#part2">Part 2 &mdash; The Setup Page</a>
+            <ol>
+              <li><a href="#part2-1">Wi-Fi and Bluetooth</a></li>
+              <li><a href="#part2-3">Custom LCD Text</a></li>
+            </ol>
+          </li>
+          <li>
+            <a href="#part3"
+              >Part 3 &mdash; Payment Gateway Settings</a
+            >
+            <ol>
+              <li><a href="#part3-2">Choosing Your Gateway</a></li>
+              <li><a href="#part3-3">3-1 PayPal</a></li>
+              <li><a href="#part3-4">3-2 Stripe</a></li>
+              <li><a href="#part3-5">3-3 Square</a></li>
+              <li><a href="#part3-6">3-4 Revolut &amp; myPOS</a></li>
+            </ol>
+          </li>
+          <li>
+            <a href="#part4">Part 4 &mdash; Extra Functions</a>
+            <ol>
+              <li><a href="#part4-1">4.1 Counter &amp; Reset Buttons</a></li>
+            </ol>
+          </li>
+          <li><a href="#ota">OTA Firmware Update</a></li>
+          <li><a href="#parts">Replacement Parts</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li>
+            <a href="#howtopay">For your customers &mdash; How to Pay</a>
+            <em>(print this page)</em>
+          </li>
+        </ol>
+      </nav>
+
+      <!-- ══════════ INTRO ══════════ -->
+      <section id="intro">
+        <h2>
+          <span class="part">INTRODUCTION</span>Coin and cashless payment, in
+          one box
+        </h2>
+        <div class="rule"></div>
+
+        <p class="lead">
+          The Sintron ST-004/ST-005 is an upgraded version of our renowned
+          model, the ST-002/ST-003. Equipped
+          <span style="color: #56c1fe"
+            >with an LCD and Mobile Payment functionality</span
+          >, it serves as a power timer control for seamless operation. This
+          timer box allows you to effortlessly connect your machine, enabling
+          users to
+          <span style="color: #56c1fe"
+            >make payments through Apple Pay, Google Pay, Paypal, Venmo, Debit
+            &amp; Credit Cards&hellip;(not limited), or Coins</span
+          >. Enjoy the flexibility of setting up time, price, and
+          <span style="color: #56c1fe">text displayed on LCD Screen</span>. It
+          is particularly well-suited for 110V~240V Washer &amp; dryers, as well
+          as any machines requiring a timer.
+        </p>
+
+        <figure style="text-align: center">
+          <img
+            alt="Sintron ST-004 and ST-004-F side by side"
+            src="https://raw.githubusercontent.com/kingccf/images/main/ST-004-F-01.png"
+          />
+        </figure>
+
+        <figure>
+          <img
+            alt="Sintron ST-004-F showing a payment QR code on its screen"
+            src="https://raw.githubusercontent.com/kingccf/images/main/ST-004-F-02.png"
+          />
+          <figcaption>
+            The screen shows a QR code when a customer chooses to pay by phone.
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- ══════════ SPEC ══════════ -->
+      <section id="spec">
+        <h2><span class="part">SPECIFICATION</span>Technical data</h2>
+        <div class="rule"></div>
+
+        <div class="note">
+          <span class="label">ONE MODEL, TWO ENCLOSURES</span>
+          <p>
+            ST-004 and ST-004-F are identical apart from the enclosure, and the
+            same is true of ST-005 and ST-005-F. From here on, this manual uses
+            <strong>ST-004</strong> to mean both ST-004 and ST-004-F, and
+            <strong>ST-005</strong> to mean both ST-005 and ST-005-F, except
+            where the enclosure itself is the topic.
+          </p>
+        </div>
+
+        <div class="table-wrap">
+          <table class="spec">
+            <tr>
+              <td>Dimensions</td>
+              <td>
+                ST-004: 26 &times; 28 &times; 13 cm<br />ST-005: 34.5 &times; 28
+                &times; 13 cm
+              </td>
+            </tr>
+            <tr>
+              <td>Voltage range</td>
+              <td>
+                ST-004: AC 110V&ndash;120V (North America) &nbsp;&middot;&nbsp;
+                AC 220V&ndash;240V (UK, EU, AU)<br />ST-005: AC 220V-240 V
+                (North America)
+              </td>
+            </tr>
+            <tr>
+              <td>Maximum load current</td>
+              <td>ST-004: 16A &nbsp;&middot;&nbsp; ST-005: 30A</td>
+            </tr>
+            <tr>
+              <td>Plug type</td>
+              <td>
+                ST-004: NEMA 5-15 (US) / UK / EU / AU<br />ST-005: NEMA 10-30 or
+                NEMA 14-30
+              </td>
+            </tr>
+            <tr>
+              <td>Relay</td>
+              <td>Solid-state relay, no moving contacts</td>
+            </tr>
+            <tr>
+              <td>Coin acceptor</td>
+              <td>
+                Sintron ST-001 coin acceptor, up to 8 coin types at the same
+                time
+              </td>
+            </tr>
+            <tr>
+              <td>Maximum setting time</td>
+              <td>99:99</td>
+            </tr>
+            <tr>
+              <td>Maximum accumulative time</td>
+              <td>999:99</td>
+            </tr>
+            <tr>
+              <td>Timer mode</td>
+              <td>Hour:Minute or Minute:Second</td>
+            </tr>
+            <tr>
+              <td>Connectivity</td>
+              <td>Wi-Fi and Bluetooth (BLE) for the ScanPay app</td>
+            </tr>
+            <tr>
+              <td>Firmware</td>
+              <td>OTA (over-the-air) update supported</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <!-- ══════════ WHAT'S IN THE BOX ══════════ -->
+      <section id="kit">
+        <h2><span class="part">IN THE BOX</span>What ships with your unit</h2>
+        <div class="rule"></div>
+
+        <table class="kit">
+          <tr>
+            <td><span class="nm">Timer box</span></td>
+            <td><span class="nm">Power cord</span></td>
+            <td>
+              <span class="nm">Keys<span class="qty">&times;2</span></span>
+            </td>
+            <td>
+              <span class="nm"
+                >Spare fuses<span class="qty">&times;2</span></span
+              >
+            </td>
+            <td><span class="nm">Hasp kit</span></td>
+            <td><span class="nm">Manual</span></td>
+          </tr>
+        </table>
+
+        <ul>
+          <li>
+            <strong>Power cord</strong> &mdash; supplied with the plug type for
+            your region.
+          </li>
+          <li>
+            <strong>Hasp kit</strong> &mdash; a Z hasp with two lock nuts. On
+            the ST-004 and ST-005 the hasp is already fitted to the door. The
+            ST-004-F ships with it as a separate kit, to be installed as
+            required.
+          </li>
+          <li><strong>Manual</strong> &mdash; supplied as a digital copy.</li>
+        </ul>
+      </section>
+
+      <!-- ══════════ QUICK START ══════════ -->
+      <section id="quickstart">
+        <h2><span class="part">QUICK START</span>First, identify the parts</h2>
+        <div class="rule"></div>
+
+        <figure style="text-align: center">
+          <img
+            alt="Numbered diagram of the parts inside the unit"
+            src="https://raw.githubusercontent.com/kingccf/images/main/ST-004-F-03.png"
+          />
+        </figure>
+
+        <div class="table-wrap">
+          <table class="legend">
+            <tr>
+              <td><span class="n">1</span>Power inlet with fuse</td>
+              <td>
+                <span class="n">2</span>LCD screen &mdash; front of the control
+                module
+              </td>
+              <td><span class="n">3</span>Coin acceptor (ST-001)</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="n">4</span>Setting buttons &mdash; back of the same
+                module (ST-07)
+              </td>
+              <td><span class="n">5</span>Cable entry</td>
+              <td><span class="n">6</span>Output socket</td>
+            </tr>
+            <tr>
+              <td><span class="n">7</span>Coin tray</td>
+              <td><span class="n">8</span>Hasp kit install</td>
+              <td><span class="n">9</span>Cam lock</td>
+            </tr>
+          </table>
+        </div>
+
+        <ol class="steps">
+          <li>
+            Plug the power cord into the fused inlet <strong>(No. 1)</strong>,
+            then into a standard household outlet. The LCD
+            <strong>(No. 2)</strong> should light up and show text.
+          </li>
+          <li>
+            Set up the coin acceptor <strong>(No. 3)</strong> following
+            <a href="#part1">Part 1</a>.
+          </li>
+          <li>
+            Set the price and run time using the buttons on the control module
+            <strong>(No. 4)</strong> following <a href="#part1">Part 1</a> and
+            <a href="#part2">Part 2</a>.
+          </li>
+          <li>
+            Insert a coin. The timer should start counting. If it does not,
+            check steps 2 and 3 again.
+          </li>
+          <li>
+            Power off your machine, then feed its power cord through
+            <strong>(No. 5)</strong> and into the output socket
+            <strong>(No. 6)</strong>. This may take some force &mdash; a snug
+            fit is recommended for safety.
+          </li>
+          <li>Your machine will now run after payment.</li>
+        </ol>
+
+        <div class="warn">
+          <span class="label">⚠ SAFETY</span>
+          <ul>
+            <li>
+              Keep the unit from touching your washer or dryer.
+              <span class="crit"
+                >Vibration from the machine can damage the unit over time.</span
+              >
+            </li>
+            <li>
+              <strong>ST-005 (30A):</strong>
+              <span class="crit">this current generates significant heat.</span>
+              Install it in a well-ventilated area, away from heat sources such
+              as a dryer.
+            </li>
+          </ul>
+        </div>
+
+        <div class="note">
+          <span class="label">SUPPORT &amp; WARRANTY</span>
+          <p>
+            Technical support:
+            <a href="mailto:sales@sintron-hk.com">sales@sintron-hk.com</a> (Chen
+            Chih Feng)<br />
+            You can extend the warranty by one more year, for two years in
+            total. Apply with the
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLScgWl-XDz17mTw5SQfr2LzSqdkvvbwuezRmOvwOQIAjAl4SiA/viewform?usp=header"
+              target="_blank"
+              rel="noopener"
+              >Sintron Warranty Request Form</a
+            >
+            (a signed-in Google account is required).
+          </p>
+        </div>
+
+        <h3 style="font-size: 17pt; color: var(--gold); letter-spacing: -0.2px">
+          What you need to set up
+        </h3>
+        <div class="rule" style="margin: 0 0 14px"></div>
+        <div style="font-size: 13.5pt; line-height: 1.7">
+          <p>
+            When you receive the ST-004/ST-005, you will need to configure four
+            settings:
+          </p>
+          <ul>
+            <li>
+              <a href="#part1"><strong>Part 1</strong></a
+              >: Coin and timer settings.
+              <strong
+                >(You can skip Parts 2 and 3 when using coins only.)</strong
+              >
+            </li>
+            <li>
+              <a href="#part2"><strong>Part 2</strong></a
+              >: Mobile payment settings. (Optional)
+            </li>
+            <li>
+              <a href="#part3"><strong>Part 3</strong></a
+              >: PayPal / Stripe / Square payment gateway. (Optional, using
+              Wi-Fi or the app)
+            </li>
+            <li>
+              <a href="#part4"><strong>Part 4</strong></a
+              >: Extra functions. (Optional)
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ══════════ PART 1 ══════════ -->
+      <section id="part1">
+        <h2>
+          <span class="part">PART 1</span>Coin acceptor and timer settings
+        </h2>
+        <div class="rule"></div>
+
+        <div class="note">
+          <span class="label">ALREADY CONFIGURED?</span>
+          <ul>
+            <li>
+              <strong style="color: var(--gold)"
+                >US customers using quarters only &mdash; the coin acceptor is
+                pre-configured.</strong
+              >
+              <strong style="color: var(--gold)"
+                >Go straight to <a href="#step13">Step 1.3</a>.</strong
+              >
+            </li>
+            <li>
+              <strong style="color: var(--gold)"
+                >Canadian customers using $0.25, $1 and $2 coins &mdash; also
+                pre-configured.</strong
+              >
+              <strong style="color: var(--gold)"
+                >Go straight to <a href="#step13">Step 1.3</a>.</strong
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="warn">
+          <span class="label"
+            >⚠ CANADIAN COINS &mdash; READ IF USING $1 OR $2</span
+          >
+          <p>
+            $1 and $2 coins minted before and after 2011 have different physical
+            characteristics, so they are pre-configured as separate coin
+            channels:
+          </p>
+          <ul>
+            <li><strong>L1</strong> &mdash; $0.25 coins</li>
+            <li>
+              <strong>L2</strong> &mdash; $1 coins minted in 2011 or earlier
+            </li>
+            <li><strong>L3</strong> &mdash; $1 coins minted after 2011</li>
+            <li>
+              <strong>L4</strong> &mdash; $2 coins minted in 2011 or earlier
+            </li>
+            <li><strong>L5</strong> &mdash; $2 coins minted after 2011</li>
+          </ul>
+          <p>
+            To stop the machine taking one of these coins, set that
+            channel&rsquo;s value to 0 &mdash; see
+            <a href="#step12">Step 1.2</a>.
+          </p>
+        </div>
+
+        <figure>
+          <img
+            alt="Coin acceptor channels"
+            src="https://raw.githubusercontent.com/kingccf/images/main/ST-004-F-04.png"
+          />
+        </figure>
+
+        <p>
+          💡 <strong>Using tokens instead of coins?</strong>
+          <a
+            href="https://sintron-hk.com/products/sintron-token-100-pcs-for-payment-box-use-copy?_pos=1&amp;_sid=25f0a1a95&amp;_ss=r"
+            target="_blank"
+            rel="noopener"
+            >See token details</a
+          >.
+        </p>
+
+        <h3 id="coin-setup">Sintron ST-001 coin setup</h3>
+        <p>
+          The box is equipped with a coin acceptor model: Sintron ST-001, a
+          multi-coin selector that accepts
+          <strong>up to 8 different coin types at the same time</strong>. This
+          type of selector is widely used in vending machines, massage chairs
+          and other self-service systems.
+        </p>
+
+        <p>
+          You will use three buttons on the side of the acceptor:
+          <strong>Setup</strong>, <strong>ADD</strong> and
+          <strong>MINUS</strong>. The two-digit display between ADD and MINUS
+          shows which channel you are on and what value it holds.
+        </p>
+
+        <figure>
+          <img
+            alt="ST-001 side panel with Setup, ADD and MINUS buttons"
+            src="https://raw.githubusercontent.com/kingccf/images/main/ST-004-F-05.png"
+          />
+        </figure>
+
+        <div class="note">
+          <span class="label">THREE STEPS</span>
+          <p>
+            <strong>1.1</strong> coin sampling &nbsp;&rarr;&nbsp;
+            <strong>1.2</strong> set the coin value &nbsp;&rarr;&nbsp;
+            <strong><a href="#step13">1.3</a></strong> set the price and run
+            time.
+          </p>
+          <p>
+            Steps 1.1 and 1.2 are done on the acceptor itself. Step 1.3 is done
+            on the control module.
+            <a href="#coin-setup-video">A video is also included below.</a>
+          </p>
+        </div>
+
+        <h4 id="step11">Step 1.1 &mdash; Coin sampling</h4>
+        <p style="margin: -2px 0 10px; color: #8a8a8a; font-size: 11pt">
+          Teaching the acceptor which coins to take.
+        </p>
+        <ol class="steps">
+          <li>
+            In standby, press <strong>Setup</strong> once. The display shows
+            <strong>L1</strong>, steady. L1 is the first of the eight coin
+            channels.
+          </li>
+          <li>
+            Prepare at least <strong>five coins of the same value</strong> (ten
+            is better) and insert them one at a time,
+            <strong>ten times in total</strong>.
+          </li>
+          <li>
+            After the tenth coin, the display flashes <strong>10</strong> and
+            you will hear a beep. Sampling for that coin is complete.
+          </li>
+        </ol>
+
+        <figure>
+          <img
+            alt="ST-001 display showing L1, ready for coin sampling"
+            src="https://raw.githubusercontent.com/kingccf/images/main/ST-004-F-06.png"
+          />
+          <figcaption>
+            L1 &mdash; the acceptor is ready to learn the first coin.
+          </figcaption>
+        </figure>
+
+        <h4 id="step12">Step 1.2 &mdash; Set the coin value</h4>
+        <p style="margin: -2px 0 10px; color: #8a8a8a; font-size: 11pt">
+          Telling the unit what each coin is worth.
+        </p>
+        <ol class="steps">
+          <li>
+            While <strong>10</strong> is flashing, press
+            <strong>Setup</strong> again to enter value setting.
+          </li>
+          <li>
+            Use <strong>ADD</strong> and <strong>MINUS</strong> to set the
+            value.
+            <strong
+              >The value is what the coin is worth in your own currency</strong
+            >
+            &mdash; 0.25 for a quarter, 1 for a one-dollar coin, 2 for a
+            two-dollar coin.
+            <strong style="color: var(--gold)"
+              >A lit decimal point at the bottom right of the display means the
+              value is below 1. See the picture below for an example showing
+              $0.25.</strong
+            >
+          </li>
+          <li>
+            Press <strong>Setup</strong> again to save.
+            <strong>L1 (channel 1)</strong> is now done &mdash; repeat the
+            process for channels <strong>L2 to L8</strong> if you have more than
+            one kind of coin.
+            <p style="margin: 8px 0 0; color: #8a8a8a; font-size: 11pt">
+              PS. If there is a coin you no longer want the machine to accept,
+              set that channel&rsquo;s value to <strong>0</strong> and it will
+              be rejected.
+            </p>
+          </li>
+          <li>
+            Keep pressing <strong>Setup</strong> until the display goes dark.
+            The acceptor restarts and beeps &mdash; that beep is your
+            confirmation that the settings are stored.
+          </li>
+        </ol>
+
+        <figure>
+          <img
+            alt="ST-001 display showing a value of 25 with the decimal point lit"
+            src="https://raw.githubusercontent.com/kingccf/images/main/ST-004-F-07.png"
+          />
+        </figure>
+
+        <div class="note">
+          <p>
+            <strong>Factory reset:</strong> with the acceptor powered, hold
+            <strong>Setup</strong> for 5 seconds and release after the beep. All
+            learned coins and values are erased.
+          </p>
+        </div>
+
+        <h4 id="step13">Step 1.3 &mdash; Set the price and run time</h4>
+
+        <figure style="text-align: center">
+          <img
+            alt="INQUIRE, CLR and SET buttons on the control module"
+            style="max-width: 280px"
+            src="https://raw.githubusercontent.com/kingccf/images/main/ST-004-F-08.png"
+          />
+          <figcaption>
+            Locate the three buttons on the back of the control module ( front
+            is LCD ) (No. 4). Please wear a glove before pressing them.
+          </figcaption>
+        </figure>
+
+        <ol class="steps">
+          <li>
+            Press <strong>SET</strong> once. The screen shows the browser setup
+            instructions &mdash; that is the other route, described below. To
+            carry on here, press <strong>SET</strong> again.
+          </li>
+          <li>
+            <strong>Timer Setup</strong> appears. Use <strong>+</strong> and
+            <strong>&minus;</strong> to change the digit you are on, and
+            <strong>SET</strong> to move to the next digit.
+          </li>
+          <li>
+            When the time is set, keep pressing <strong>SET</strong> until
+            <strong>Coin Amount Setup</strong> appears. Set the amount the same
+            way.
+          </li>
+          <li>
+            Press <strong>SET</strong> once more. The screen repeats back what
+            you set and shows <strong>settings saved</strong>. You are done.
+          </li>
+        </ol>
+
+        <div class="screens">
+          <div class="scr-row">
+            <div class="scr-wrap">
+              <div class="scr-bezel">
+                <div class="scr">
+                  <span class="scr-t">Timer Setup</span>
+                  <span class="scr-v">60:00</span>
+                  <span class="scr-u">Minute:Second</span>
+                </div>
+              </div>
+              <span class="scr-cap">How long it runs</span>
+            </div>
+            <span class="scr-arrow">&rsaquo;</span>
+            <div class="scr-wrap">
+              <div class="scr-bezel">
+                <div class="scr">
+                  <span class="scr-t">Coin Amount Setup</span>
+                  <span class="scr-v">1.00</span>
+                </div>
+              </div>
+              <span class="scr-cap">How much starts a run</span>
+            </div>
+            <span class="scr-arrow">&rsaquo;</span>
+            <div class="scr-wrap">
+              <div class="scr-bezel">
+                <div class="scr confirm">
+                  <span class="scr-t">When receiving:</span>
+                  <span class="scr-v">1.00</span>
+                  <span class="scr-t" style="font-weight: normal"
+                    >then run</span
+                  >
+                  <span class="scr-v">60:00</span>
+                  <span class="scr-u" style="font-weight: normal"
+                    >(Min:Sec)</span
+                  >
+                  <span class="scr-ok">settings saved</span>
+                </div>
+              </div>
+              <span class="scr-cap">Confirmation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="note" id="coin-setup-video">
+          <span class="label">PREFER TO WATCH?</span>
+          <p>
+            These videos show the same 3 steps on a real unit. Worth a look if
+            anything above is unclear.
+          </p>
+          <p>
+            <a
+              class="video"
+              href="https://youtu.be/FHfaE0KUZoQ"
+              target="_blank"
+              rel="noopener"
+              >Video: coin setup, steps 1.1&ndash;1.3</a
+            >
+          </p>
+        </div>
+
+        <div class="note">
+          <span class="label">TAKING COINS ONLY? SETUP IS COMPLETE</span>
+          <p>
+            If the machine only needs to take coins,
+            <strong style="color: var(--gold); font-size: 13.5pt"
+              >you're all set</strong
+            >
+            &mdash; it is ready to use, and nothing beyond this point is
+            required. Everything that follows is optional:
+            <a href="#part2">Part 2</a> is the setup page (mobile payment,
+            screen text, off hours, email reports),
+            <a href="#part3">Part 3</a> the payment gateways, and
+            <a href="#part4">Part 4</a> how to read what the machine has taken.
+          </p>
+          <p>
+            To take mobile payments as well, carry on to
+            <a href="#part2">Part 2</a>.
+          </p>
+        </div>
+      </section>
+
+      <!-- ══════════ PART 2 ══════════ -->
+      <section id="part2">
+        <h2><span class="part">PART 2</span>The setup page</h2>
+        <div class="rule"></div>
+
+        <p>
+          Locate the three buttons as mentioned from
+          <a href="#step13">Step 1.3</a> on the back of the control module
+          <strong>(No. 4)</strong>.
+          <strong>Please wear a glove before pressing them.</strong>
+        </p>
+
+        <ol class="steps">
+          <li>
+            Press <strong>SET</strong> to enter setup mode. The screen shows the
+            setup instructions.
+          </li>
+          <li>
+            Follow the on-screen instructions to open the settings page in your
+            browser.
+          </li>
+          <li>You will enter the setup page.</li>
+        </ol>
+
+        <div class="screens">
+          <div class="scr-row">
+            <div class="scr-wrap">
+              <div class="scr-bezel">
+                <div class="scr instr">
+                  <span class="scr-t">SET UP MODE</span>
+                  <span class="scr-s"
+                    >1. Disable Cellular Network<br />
+                    2. Connect Wifi SSID: ST-004<br />
+                    3. Open Web Browser then<br />go to: 192.168.4.1</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p>
+          <a
+            class="video"
+            href="https://youtu.be/CfQPtIqbkGA"
+            target="_blank"
+            rel="noopener"
+            >Video: enter setup and save</a
+          >
+        </p>
+
+        <p>
+          Below are only some of the settings. For the full explanation of all
+          settings, <a href="#">click here</a>.
+        </p>
+
+        <h3 id="part2-1">Page Setting &mdash; Wi-Fi and Bluetooth</h3>
+        <p>
+          The top of the setup page holds three things: the
+          <strong>device name</strong>, which <strong>connection</strong> the
+          unit uses, and the <strong>Wi-Fi details</strong> of your own router.
+          You can enable a Wi-Fi connection, Bluetooth for the app, or both.
+        </p>
+
+        <div class="wpage">
+          <div class="wbar wtitle">Sintron ST-004 Settings</div>
+          <div class="wbar wsupport">support:sales@sintron-hk.com</div>
+
+          <div class="wcard">
+            <div class="wrow">
+              <label>Device_name</label>
+              <span class="fld wide">ST-004 F</span>
+            </div>
+            <p class="whelp">
+              This name will appear in the app as your device name.
+            </p>
+          </div>
+
+          <div class="wcard">
+            <p class="wlab">Connection:</p>
+            <p class="wchecks">
+              <span class="item"><span class="cb on">&#10003;</span>WIFI</span>
+              <span class="item"><span class="cb"></span>BLE (for APP)</span>
+            </p>
+          </div>
+
+          <div class="wcard">
+            <div class="wrow">
+              <label>WiFi SSID</label>
+              <span class="fld wide">YourNetwork</span>
+            </div>
+            <div class="wrow">
+              <label>Wifi Password</label>
+              <span class="fld wide"
+                >&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;</span
+              >
+            </div>
+            <p class="whelp">
+              PS. Replace to your WIFI router&rsquo;s SSID and Password to
+              connect to Internet, only supports 2.4G Frequency Wifi. Please
+              Don&rsquo;t Use 5G or above Frequency wifi. You can ignore this if
+              you only want to use Coins or App Payment
+            </p>
+          </div>
+        </div>
+        <p style="font-size: 10.5pt; color: #8a8a8a">
+          The setup page as it appears in your browser.
+        </p>
+
+        <h4>Your Wi-Fi details</h4>
+        <p>You can connect the device to your payment network in two ways:</p>
+        <ul>
+          <li>
+            <strong>Wi-Fi (recommended):</strong> If your installation location
+            has internet access, use Wi-Fi. Customers do not need to download
+            any app &mdash; they simply scan the QR code and pay.
+          </li>
+          <li>
+            <strong>Bluetooth / ScanPay App:</strong> If there is no internet
+            access at the location, use the ScanPay app via Bluetooth. Download
+            from the Apple App Store or Google Play Store by searching
+            &ldquo;ScanPay&rdquo;.
+          </li>
+        </ul>
+        <p>
+          You can also enable both Wi-Fi and Bluetooth if you wish to support
+          both options.
+        </p>
+
+        <div
+          class="img-row"
+          style="margin-bottom: 6px; display: flex; align-items: flex-start"
+        >
+          <img
+            alt="ScanPay app icon"
+            style="max-width: 110px"
+            src="https://raw.githubusercontent.com/kingccf/images/main/image12.png"
+          />
+          <div style="flex: 1; text-align: center">
+            <img
+              alt="Scan Pay iOS QR code"
+              style="max-width: 150px"
+              src="https://raw.githubusercontent.com/kingccf/images/main/image13.png"
+            />
+            <img
+              alt="Scan Pay Android QR code"
+              style="max-width: 150px"
+              src="https://raw.githubusercontent.com/kingccf/images/main/image14.png"
+            />
+          </div>
+        </div>
+
+        <p>
+          <a
+            class="video"
+            href="https://youtube.com/shorts/gVVt1uUUNqE?feature=share"
+            target="_blank"
+            rel="noopener"
+            >Video: Wi-Fi mobile payment demo</a
+          >
+          <a
+            class="video"
+            href="https://youtube.com/shorts/Kj2mYVWuIuQ?feature=share"
+            target="_blank"
+            rel="noopener"
+            >Video: ScanPay app demo</a
+          >
+        </p>
+
+        <h3 id="part2-3">Page Settings &mdash; Custom LCD text</h3>
+        <p>
+          This is the screen a customer sees
+          <strong>before they pay</strong> &mdash; the
+          <strong>billboard</strong>, as the product listing calls it. For most
+          customers it is the only instruction they will ever read. You write it
+          yourself, as <strong>seven separate lines</strong>. Whatever you type
+          goes straight onto the display, top to bottom.
+        </p>
+
+        <div class="pairview">
+          <div class="left">
+            <div class="wpage compact">
+              <div class="wcard lines7">
+                <p class="wlab">
+                  Display on Main Screen: This information will be displayed on
+                  the screen while waiting for payment.
+                </p>
+                <div class="wrow">
+                  <label>Line 1:</label
+                  ><span class="fld wide">Sintron ST-004</span>
+                </div>
+                <div class="wrow">
+                  <label>Line 2:</label
+                  ><span class="fld wide" style="color: #8fa39c"
+                    >leave blank if no use</span
+                  >
+                </div>
+                <div class="wrow">
+                  <label>Line 3:</label
+                  ><span class="fld wide">Please Insert Coin</span>
+                </div>
+                <div class="wrow">
+                  <label>Line 4:</label><span class="fld wide">or</span>
+                </div>
+                <div class="wrow">
+                  <label>Line 5:</label
+                  ><span class="fld wide">Click Button &amp;</span>
+                </div>
+                <div class="wrow">
+                  <label>Line 6:</label
+                  ><span class="fld wide">Apple Pay/Paypal via Safar</span>
+                </div>
+                <div class="wrow">
+                  <label>Line 7:</label
+                  ><span class="fld wide">$1 for 30 minutes</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="arrow">&rsaquo;</span>
+          <div class="right">
+            <div class="scr-bezel">
+              <div class="scr lines">
+                <span class="ln b">Sintron ST-004</span>
+                <span class="ln e">&nbsp;</span>
+                <span class="ln">Please Insert Coin</span>
+                <span class="ln">or</span>
+                <span class="ln">Click Button &amp;</span>
+                <span class="ln">Apple Pay/Paypal via Safar</span>
+                <span class="ln">$1 for 30 minutes</span>
+              </div>
+            </div>
+            <span class="scr-cap">Lines 1&ndash;7, top to bottom</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════ PART 3 ══════════ -->
+      <section id="part3">
+        <h2>
+          <span class="part">PART 3</span>Payment Gateway Settings (Optional,
+          Need WI-FI internet or Use APP)
+        </h2>
+        <div class="rule"></div>
+
+        <p>
+          Info for you (Owner): the first step is to decide which payment
+          gateway you would like to use, then the second step is to check which
+          payment methods it supports &mdash; that is, the ways your customers
+          can actually pay, such as Apple Pay, Google Pay, PayPal, Venmo, or a
+          debit/credit card. Not every gateway supports every method, so this
+          determines what your customers will see at checkout.
+        </p>
+
+        <h3 id="part3-2">Setting Page &mdash; Choosing your gateway</h3>
+
+        <div class="wpage">
+          <div class="wcard">
+            <p class="wlab">Mobile Payment Gateway Options:</p>
+            <p class="opts">
+              <span class="o"><span class="rb on"></span>PayPal</span>
+              <span class="o"><span class="rb"></span>Stripe</span>
+              <span class="o"><span class="rb"></span>Square</span>
+              <span class="o"><span class="rb"></span>revolut</span>
+              <span class="o"><span class="rb"></span>mypos</span>
+            </p>
+            <p class="whelp">
+              PS. for Mobile Payment, it needs to connect to Internet. make sure
+              to connect to WIFI router first or use APP.
+            </p>
+            <p class="opts" style="margin-top: 10px">
+              <span class="o"
+                ><span class="rb"></span>None (only use coins)</span
+              >
+            </p>
+          </div>
+        </div>
+
+        <p>
+          A payment gateway is the platform <strong>you</strong> use to receive
+          money when customers pay with Apple Pay, Google Pay, PayPal, Venmo and
+          so on.
+          <strong
+            >Payments go straight into your own account &mdash; Sintron does not
+            sit in the middle and does not hold funds.</strong
+          >
+        </p>
+
+        <p>
+          First decide which gateway you want to use, then check which payment
+          methods it supports.
+        </p>
+
+        <div class="note">
+          <span class="label"
+            >SUPPORTED GATEWAYS &mdash; UPDATED 2026-03-24</span
+          >
+          <p>
+            <span class="chip gold">PayPal</span>
+            <span class="chip gold">Stripe</span>
+            <span class="chip gold">Square</span>
+            <span class="chip gold">Revolut</span>
+            <span class="chip gold">myPOS</span>
+          </p>
+          <p>
+            Need a gateway that is not listed? Contact
+            <a href="mailto:sales@sintron-hk.com">sales@sintron-hk.com</a>. The
+            firmware can be updated to add support if the gateway would be
+            useful to other users too.
+          </p>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <tr>
+              <th>Gateway</th>
+              <th>Payment methods supported</th>
+              <th>Transaction fees</th>
+              <th>Micropayment rate</th>
+              <th>International</th>
+              <th>Chargeback fee</th>
+              <th>Monthly fee</th>
+            </tr>
+            <tr>
+              <td><strong>PayPal</strong></td>
+              <td>
+                Credit/debit cards, PayPal account, Venmo, Apple Pay, Google Pay
+              </td>
+              <td>Varies by country and transaction type</td>
+              <td>5% + $0.05 per transaction (payments under $10 USD)</td>
+              <td>Supported, with currency conversion fees</td>
+              <td>$20 per chargeback</td>
+              <td>None (standard payments)</td>
+            </tr>
+            <tr>
+              <td><strong>Stripe</strong></td>
+              <td>
+                Credit/debit cards, Apple Pay, Google Pay,
+                <a
+                  href="https://docs.stripe.com/payments/payment-methods/overview"
+                  target="_blank"
+                  rel="noopener"
+                  >more methods</a
+                >
+              </td>
+              <td>
+                2.6% + $0.30 per transaction (US,
+                <a
+                  href="https://stripe.com/pricing"
+                  target="_blank"
+                  rel="noopener"
+                  >pricing</a
+                >)
+              </td>
+              <td>Not applicable</td>
+              <td>Supported, multi-currency</td>
+              <td>$15 per chargeback</td>
+              <td>None (standard payments)</td>
+            </tr>
+            <tr>
+              <td><strong>Square</strong></td>
+              <td>
+                Credit/debit cards, Apple Pay, Google Pay, gift cards (<a
+                  href="https://developer.squareup.com/docs/payment-card-support-by-country"
+                  target="_blank"
+                  rel="noopener"
+                  >more</a
+                >)
+              </td>
+              <td>
+                2.6% + $0.30 per transaction (US,
+                <a
+                  href="https://squareup.com/us/en/online-store/plans"
+                  target="_blank"
+                  rel="noopener"
+                  >pricing</a
+                >)
+              </td>
+              <td>Not applicable</td>
+              <td>Limited, USD only</td>
+              <td>$0 (Square covers the cost)</td>
+              <td>None (standard payments)</td>
+            </tr>
+          </table>
+        </div>
+        <p style="font-size: 10pt; color: #8a8a8a">
+          Fees are set by the payment providers and may change. Check the
+          provider&rsquo;s own pricing page for current rates. Revolut and myPOS
+          are not listed above &mdash; see their own pricing pages.
+        </p>
+
+        <!-- 3-3 PayPal -->
+        <h3 id="part3-3">Part 3-1 &mdash; How to set up PayPal</h3>
+        <p>PayPal needs two values on the setup page:</p>
+        <div class="wpage">
+          <div class="wcard">
+            <div class="wrow">
+              <label>PayPal Client ID:</label
+              ><span class="fld wide"
+                >&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;</span
+              >
+            </div>
+            <div class="wrow">
+              <label>PayPal Secret:</label
+              ><span class="fld wide"
+                >&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;</span
+              >
+            </div>
+            <p class="whelp">Video: How to Obtain PayPal Keys</p>
+          </div>
+        </div>
+
+        <div class="warn">
+          <span class="label">⚠ PAYPAL REQUIREMENTS</span>
+          <ul>
+            <li>
+              You need a <strong>PayPal Business account</strong>. You do not
+              need a registered company or a business licence &mdash; any
+              individual can upgrade a personal PayPal account to a Business
+              account for free. Go to your PayPal account settings &rarr;
+              <a
+                href="https://www.paypal.com/us/cshelp/article/how-do-i-change-the-type-of-paypal-account-i-have-help339"
+                target="_blank"
+                rel="noopener"
+                >Upgrade Account Type</a
+              >
+              &rarr; choose Business &rarr; follow the steps. It takes about two
+              minutes.
+            </li>
+            <li>
+              For payments under $10 USD, contact PayPal customer support and
+              request the <strong>micropayment rate</strong> (5% + $0.05 per
+              transaction). This rate is not applied automatically &mdash; you
+              have to request it. Reference:
+              <a
+                href="https://www.paypal.com/webapps/mpp/merchant-fees"
+                target="_blank"
+                rel="noopener"
+                >PayPal merchant fees</a
+              >.
+            </li>
+          </ul>
+        </div>
+
+        <figure>
+          <img
+            alt="PayPal Business account"
+            src="https://raw.githubusercontent.com/kingccf/images/main/image15.png"
+          />
+        </figure>
+
+        <p>
+          Log in to your PayPal Business account and check that you can manually
+          create an invoice. If you cannot, your account is not yet verified
+          &mdash; complete verification before going further.
+        </p>
+
+        <p>
+          <a
+            class="video"
+            href="https://www.youtube.com/watch?v=OzaiGV38LyQ"
+            target="_blank"
+            rel="noopener"
+            >Video: check if you can create a PayPal invoice</a
+          >
+        </p>
+
+        <h4>Get your PayPal Client ID and Secret</h4>
+        <p>
+          <a
+            class="video"
+            href="https://youtu.be/F5uVhG-k_EI"
+            target="_blank"
+            rel="noopener"
+            >Video: get Client ID and Secret</a
+          >
+        </p>
+
+        <div class="note">
+          <span class="label">TWO THINGS TO WATCH</span>
+          <ul>
+            <li>
+              Make sure you are in the <strong>Live</strong> environment (shown
+              in green), not Sandbox.
+            </li>
+            <li>
+              On the last page, tick <strong>Vault</strong> and
+              <strong>Invoicing</strong> only. This is the safer option &mdash;
+              no other permissions are granted to the application.
+            </li>
+          </ul>
+        </div>
+
+        <div class="img-row">
+          <img
+            alt="PayPal Live environment"
+            src="https://raw.githubusercontent.com/kingccf/images/main/image16.png"
+          />
+          <img
+            alt="PayPal permissions: Vault and Invoicing"
+            src="https://raw.githubusercontent.com/kingccf/images/main/image17.png"
+          />
+        </div>
+
+        <p>
+          Copy and paste the Client ID and Secret into the PayPal fields on the
+          setup page from Part 2.
+        </p>
+
+        <figure>
+          <img
+            alt="Paste PayPal Client ID and Secret"
+            src="https://raw.githubusercontent.com/kingccf/images/main/image18.png"
+          />
+        </figure>
+
+        <p>
+          Then test by pressing the payment button.
+          <strong>If the QR code appears, it is working.</strong>
+        </p>
+
+        <figure>
+          <img
+            alt="Payment button"
+            style="max-width: 160px"
+            src="https://raw.githubusercontent.com/kingccf/images/main/image19.png"
+          />
+        </figure>
+
+        <h4>Final test</h4>
+        <p>
+          <a
+            class="video"
+            href="https://youtu.be/1XtQxRZ00nI"
+            target="_blank"
+            rel="noopener"
+            >Video: PayPal &amp; coin payment test</a
+          >
+          <a
+            class="video"
+            href="https://youtu.be/MBQXCUWkfmo"
+            target="_blank"
+            rel="noopener"
+            >Video: Apple Pay test</a
+          >
+        </p>
+        <p style="font-size: 10.5pt; color: #8a8a8a">
+          Apple Pay requires an iPhone using the Safari browser. It does not
+          work in Chrome or other browsers.
+        </p>
+
+        <div class="note">
+          <span class="label">PAYPAL TROUBLESHOOTING</span>
+          <p>
+            <strong
+              >The QR code appears for one second and then disappears.</strong
+            ><br />
+            <em>Cause:</em> your PayPal Business account verification is not
+            complete, so the account cannot issue invoices for customers to
+            pay.<br />
+            <em>Solution:</em> complete PayPal Business verification, then try
+            again.
+          </p>
+          <p>
+            <a
+              class="video"
+              href="https://www.youtube.com/watch?v=Xx2cVo_N02o"
+              target="_blank"
+              rel="noopener"
+              >Video: complete PayPal Business verification</a
+            >
+          </p>
+        </div>
+
+        <figure>
+          <img
+            alt="PayPal Business verification"
+            src="https://raw.githubusercontent.com/kingccf/images/main/image20.png"
+          />
+        </figure>
+
+        <!-- 3-2 Stripe -->
+        <h3 id="part3-4">Part 3-2 &mdash; How to set up Stripe</h3>
+        <p>Stripe needs one value on the setup page:</p>
+        <div class="wpage">
+          <div class="wcard">
+            <div class="wrow">
+              <label>Stripe API Key:</label
+              ><span class="fld wide"
+                >&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;</span
+              >
+            </div>
+            <p class="whelp">Video: How to Obtain Stripe API Key</p>
+          </div>
+        </div>
+        <ol class="steps">
+          <li>
+            Log in to
+            <a
+              href="https://dashboard.stripe.com/dashboard"
+              target="_blank"
+              rel="noopener"
+              >dashboard.stripe.com</a
+            >
+            and click <strong>Developer</strong>.
+          </li>
+          <li>
+            Click the <strong>API Key</strong> tab, then
+            <strong>Create Secret</strong>. You will be asked to verify &mdash;
+            choose whichever method you prefer (Touch ID is recommended).
+          </li>
+          <li>
+            Fill in the API name and URL as you wish, for example
+            <em>ST-004</em> and
+            <a href="https://sintron-hk.com" target="_blank" rel="noopener"
+              >https://sintron-hk.com</a
+            >. The URL does not matter.
+          </li>
+          <li>You will then get your API key. Copy and save it.</li>
+        </ol>
+
+        <div class="img-row">
+          <img
+            alt="Stripe Developer tab"
+            src="https://raw.githubusercontent.com/kingccf/images/main/image21.png"
+          />
+          <img
+            alt="Stripe API key tab"
+            src="https://raw.githubusercontent.com/kingccf/images/main/image22.png"
+          />
+        </div>
+        <div class="img-row">
+          <img
+            alt="Stripe verification"
+            src="https://raw.githubusercontent.com/kingccf/images/main/image23.png"
+          />
+          <img
+            alt="Stripe API name and URL"
+            src="https://raw.githubusercontent.com/kingccf/images/main/image24.png"
+          />
+        </div>
+
+        <figure>
+          <img
+            alt="Stripe API key"
+            src="https://raw.githubusercontent.com/kingccf/images/main/image25.png"
+          />
+        </figure>
+
+        <p>
+          <a
+            class="video"
+            href="https://youtu.be/JGIMQfWnGqo?si=4NQiWtr7CpIfziHo"
+            target="_blank"
+            rel="noopener"
+            >Video: get your Stripe API key</a
+          >
+        </p>
+
+        <p>
+          Copy and paste the key into the Stripe field on the setup page from
+          Part 2, then test with the payment button.
+          <strong>If the QR code appears, it is working.</strong>
+        </p>
+
+        <div class="img-row">
+          <img
+            alt="Paste Stripe API key"
+            src="https://raw.githubusercontent.com/kingccf/images/main/image26.png"
+          />
+          <img
+            alt="Payment button"
+            style="max-width:160px;"
+            src="https://raw.githubusercontent.com/kingccf/images/main/image19.png"
+          />
+        </div>
+
+        <p>
+          💡 <strong>Tip:</strong> to change the name shown on the payment page,
+          see
+          <a
+            class="video"
+            href="https://youtu.be/M1zQ9fGa3Ug"
+            target="_blank"
+            rel="noopener"
+            >Video: revise the name</a
+          >
+        </p>
+
+        <figure>
+          <img
+            alt="Change the name on the payment page"
+            src="https://raw.githubusercontent.com/kingccf/images/main/image27.png"
+          />
+        </figure>
+
+        <!-- 3-3 Square -->
+        <h3 id="part3-5">Part 3-3 &mdash; How to set up Square</h3>
+        <p>Square needs one value on the setup page:</p>
+        <div class="wpage">
+          <div class="wcard">
+            <div class="wrow">
+              <label>Square API Key:</label
+              ><span class="fld wide"
+                >&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="warn">
+          <span class="label">⚠ AVAILABILITY</span>
+          <p>
+            The Square API only works in the US, UK, Canada, Australia, Japan,
+            Ireland, France and Spain.
+          </p>
+        </div>
+
+        <p>
+          Before you start, go to <strong>Account &amp; Settings</strong> and
+          add a <strong>Location</strong>. If no location is set, Square will
+          block the connection.
+        </p>
+
+        <div class="img-row">
+          <img
+            alt="Square Account and Settings"
+            src="https://raw.githubusercontent.com/kingccf/images/main/image28.png"
+          />
+          <img
+            alt="Square location"
+            src="https://raw.githubusercontent.com/kingccf/images/main/image29.png"
+          />
+        </div>
+
+        <ol class="steps">
+          <li>Add your Location in Square&rsquo;s Account &amp; Settings.</li>
+          <li>
+            Log in to
+            <a
+              href="https://developer.squareup.com/console/en/apps"
+              target="_blank"
+              rel="noopener"
+              >developer.squareup.com</a
+            >, open the <strong>Applications</strong> tab and click
+            <strong>+</strong> to add one.
+          </li>
+          <li>
+            Fill in a name, for example <em>ST-004</em>, and complete the rest.
+          </li>
+          <li>Open the <strong>Production</strong> tab to see your token.</li>
+        </ol>
+
+        <div class="img-row">
+          <img
+            alt="Square developer console"
+            src="https://raw.githubusercontent.com/kingccf/images/main/image30.png"
+          />
+          <img
+            alt="Square application name"
+            src="https://raw.githubusercontent.com/kingccf/images/main/image31.png"
+          />
+        </div>
+        <div class="img-row">
+          <img
+            alt="Square application setup"
+            src="https://raw.githubusercontent.com/kingccf/images/main/image32.png"
+          />
+          <img
+            alt="Square application setup"
+            src="https://raw.githubusercontent.com/kingccf/images/main/image33.png"
+          />
+        </div>
+
+        <figure>
+          <img
+            alt="Square production token"
+            src="https://raw.githubusercontent.com/kingccf/images/main/image34.png"
+          />
+        </figure>
+
+        <p>
+          <a
+            class="video"
+            href="https://youtu.be/HiQnPGTfz3g"
+            target="_blank"
+            rel="noopener"
+            >Video: get your Square API key</a
+          >
+        </p>
+
+        <p>
+          Copy and paste the token into the Square field on the setup page from
+          Part 2, then test with the payment button.
+          <strong>If the QR code appears, it is working.</strong>
+        </p>
+
+        <div class="img-row">
+          <img
+            alt="Paste Square token"
+            src="https://raw.githubusercontent.com/kingccf/images/main/image35.png"
+          />
+          <img
+            alt="Payment button"
+            src="https://raw.githubusercontent.com/kingccf/images/main/image19.png"
+          />
+        </div>
+
+        <!-- 3-4 Revolut & myPOS -->
+        <h3 id="part3-6">Part 3-4 &mdash; Revolut and myPOS</h3>
+        <p>
+          Both are supported by the firmware and both have their own fields on
+          the setup page &mdash; Revolut asks for one key, myPOS for a pair:
+        </p>
+        <div class="wpage">
+          <div class="wcard">
+            <div class="wrow">
+              <label>Revolut API Key:</label
+              ><span class="fld wide"
+                >&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;</span
+              >
+            </div>
+            <div class="wrow" style="margin-top: 14px">
+              <label>myPOS Client ID:</label
+              ><span class="fld wide"
+                >&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;</span
+              >
+            </div>
+            <div class="wrow">
+              <label>myPOS Secret:</label
+              ><span class="fld wide"
+                >&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <p>
+          The pattern is the same as the gateways above: create the API
+          credentials in your provider account, then paste them in here and
+          save.
+        </p>
+        <p>
+          For the current step-by-step guide for these two gateways, contact
+          <a href="mailto:sales@sintron-hk.com">sales@sintron-hk.com</a>.
+        </p>
+      </section>
+
+      <!-- ══════════ PART 4 ══════════ -->
+      <section id="part4">
+        <h2><span class="part">PART 4</span>Extra functions</h2>
+        <div class="rule"></div>
+
+        <h3 id="part4-1">4.1 &mdash; Counter and reset buttons</h3>
+        <p>
+          Outside setup mode, two of the three buttons on the back of the
+          control module <strong>(No. 4)</strong> do this work.
+        </p>
+
+        <div class="btnrow">
+          <div class="btn">
+            <span class="nm">INQUIRE</span>
+            <span class="role">Read the totals</span>
+          </div>
+          <div class="btn">
+            <span class="nm">CLR</span>
+            <span class="role">Clear the totals &mdash; hold 5 seconds</span>
+          </div>
+          <div class="btn dim">
+            <span class="nm">SET</span>
+            <span class="role"
+              >Enters setup mode instead &mdash; see
+              <a href="#part2">Part 2</a></span
+            >
+          </div>
+        </div>
+        <p style="font-size: 10.5pt; color: #8a8a8a">
+          Inside setup mode the same three buttons become <strong>+</strong>,
+          <strong>&minus;</strong> and <strong>Setup</strong>. The board itself
+          is pictured in <a href="#step13">Step 1.3</a>.
+        </p>
+
+        <ul>
+          <li>
+            <strong>INQUIRE</strong> &mdash; press once to read the totals. The
+            screen shows <strong>how much money</strong> the unit has taken,
+            with coins and cashless payments counted separately.
+          </li>
+          <li>
+            <strong>CLR</strong> &mdash; hold for more than 5 seconds, then
+            release. This clears both totals and stops any time currently
+            running.
+          </li>
+        </ul>
+
+        <div class="screens">
+          <div class="scr-row">
+            <div class="scr-wrap">
+              <div class="scr-bezel">
+                <div class="scr pair">
+                  <span class="scr-t">Total Coin Received:</span>
+                  <span class="scr-v">284.75</span>
+                  <span class="scr-t">Total Cashless Received:</span>
+                  <span class="scr-v">121.50</span>
+                </div>
+              </div>
+              <span class="scr-cap"
+                >INQUIRE &mdash; press once (example figures)</span
+              >
+            </div>
+            <span class="scr-arrow">&rsaquo;</span>
+            <div class="scr-wrap">
+              <div class="scr-bezel">
+                <div class="scr msg">
+                  <span class="scr-t">Counter and Timer<br />Cleared</span>
+                </div>
+              </div>
+              <span class="scr-cap"
+                >CLR &mdash; hold 5 seconds, then release</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <p>
+          The figures keep adding up until you clear them, so they are not a
+          daily or monthly figure. Clearing them each time you empty the coin
+          box makes the number read as
+          <em>&ldquo;since the last collection&rdquo;</em>. If the unit is
+          online you can have the same totals emailed to you &mdash; see
+          <a href="#part2-5">Part 2.5</a>.
+        </p>
+
+      </section>
+
+      <!-- ══════════ OTA ══════════ -->
+      <section id="ota">
+        <h2><span class="part">FIRMWARE</span>OTA update</h2>
+        <div class="rule"></div>
+        <p>
+          The unit supports OTA (over-the-air) firmware updates. If you need an
+          update, contact
+          <a href="mailto:sales@sintron-hk.com">sales@sintron-hk.com</a>.
+        </p>
+        <p>
+          We also offer B2B services to tailor the functionality to your needs.
+          Get in touch for customisation options.
+        </p>
+
+      </section>
+
+      <!-- ══════════ PARTS ══════════ -->
+      <section id="parts">
+        <h2><span class="part">MAINTENANCE</span>Replacement parts</h2>
+        <div class="rule"></div>
+        <p>
+          <strong
+            >Something broke? There is no need to replace the whole
+            unit.</strong
+          >
+          These components are available separately:
+        </p>
+        <ul>
+          <li>Solid state relay</li>
+          <li>Coin acceptor ST-001</li>
+          <li>ST-07 module</li>
+          <li>Power cord</li>
+          <li>Output socket</li>
+          <li>Input socket</li>
+        </ul>
+        <p>
+          Contact
+          <a href="mailto:sales@sintron-hk.com">sales@sintron-hk.com</a> for
+          availability.
+        </p>
+      </section>
+
+      <!-- ══════════ FAQ ══════════ -->
+      <section id="faq">
+        <h2><span class="part">FAQ</span>Common questions</h2>
+        <div class="rule"></div>
+
+        <h4>No power after using it for a while?</h4>
+        <p>
+          Usually the fuse has blown to protect the machine. Check the fuse
+          first.
+          <a
+            href="https://www.youtube.com/watch?v=0iqHUlMM97M"
+            target="_blank"
+            rel="noopener"
+            >Locate the fuse on the ST-004</a
+          >
+          &middot;
+          <a
+            href="https://drive.google.com/file/d/1avKYFG_Ii_SVSFD8N8Ju8H2xO5fTJg8u/view?usp=sharing"
+            target="_blank"
+            rel="noopener"
+            >Check the fuse on the ST-005</a
+          >. Two spare fuses are included in the box.
+        </p>
+
+        <h4>Can I use tokens instead of coins?</h4>
+        <p>
+          Yes. The coin acceptor can be trained to accept tokens in the same way
+          as coins.
+          <a
+            href="https://sintron-hk.com/products/sintron-token-100-pcs-for-payment-box-use-copy?_pos=1&amp;_sid=25f0a1a95&amp;_ss=r"
+            target="_blank"
+            rel="noopener"
+            >Tokens are available here</a
+          >.
+        </p>
+
+        <h4>How do I reset the coin acceptor to factory defaults?</h4>
+        <p>
+          Hold the <strong>Setup</strong> button on the ST-001 coin acceptor for
+          more than 5 seconds. The acceptor resets to factory settings and you
+          will need to train it again with your coin types.
+        </p>
+
+        <h4>How do I reset the timer to factory defaults?</h4>
+        <p>
+          There is a factory reset at the bottom of the browser setup page.
+          It clears everything you
+          set on that page, so read the warning there first.
+        </p>
+
+        <h4>Do customers need to install an app?</h4>
+        <p>
+          Not if the unit is on Wi-Fi &mdash; they scan the QR code on the
+          screen and pay in their phone browser. The ScanPay app is only needed
+          where the location has no internet and the unit is running over
+          Bluetooth.
+        </p>
+
+        <h4>Does the machine still work without internet?</h4>
+        <p>
+          Yes. Coin payment runs fully offline with no network and no account.
+          With no internet at the location, customers can still pay by phone
+          through the ScanPay app over Bluetooth.
+        </p>
+
+        <h4>The coin acceptor is accepting coins it should not accept.</h4>
+        <p>
+          The sensitivity is set too high. Adjust it down until only the correct
+          coin types are accepted.
+          <a
+            href="https://youtu.be/cndA96zI53Q?si=5cbBcvhhTWUx0gAK"
+            target="_blank"
+            rel="noopener"
+            >See the sensitivity adjustment video</a
+          >.
+        </p>
+
+        <h4>How do I extend my warranty?</h4>
+        <p>
+          You can extend it by one year, for two years in total, by submitting
+          the
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLScgWl-XDz17mTw5SQfr2LzSqdkvvbwuezRmOvwOQIAjAl4SiA/viewform?usp=header"
+            target="_blank"
+            rel="noopener"
+            >Sintron Warranty Request Form</a
+          >.
+        </p>
+
+        <h4>What is the difference between the ST-004 and the ST-004-F?</h4>
+        <p>
+          The ST-004-F is front-opening, while the ST-004 is side-opening.
+          Other specs are the same.
+        </p>
+      </section>
+
+      <!-- ══════════ CUSTOMER NOTICE ══════════ -->
+      <section class="customer" id="howtopay">
+        <h2>
+          <span class="part" style="color: #c9962e">FOR YOUR CUSTOMERS</span>How
+          to Pay
+        </h2>
+        <div class="rule"></div>
+        <div class="ownerbar">
+          <strong>Owner &mdash; this page is for you to print.</strong> Your
+          customers never see the rest of this manual, so nothing else tells
+          them how to pay. Write your price in the box below, print this page,
+          and put it on or beside the machine. Leave the two codes exactly as
+          they are &mdash; they are what installs the app on your
+          customer&rsquo;s phone. This gold bar does not print.
+        </div>
+
+        <div class="priceline">
+          This machine: <span class="bl">&nbsp;</span> for
+          <span class="bl">&nbsp;</span> minutes
+        </div>
+
+        <div class="opt">
+          <h3>Option A &mdash; Coins</h3>
+          <p>Put your coins in. The timer starts on its own.</p>
+        </div>
+
+        <div class="opt">
+          <h3>Option B &mdash; Scan the code on the screen</h3>
+          <p>
+            1. Point your phone camera at the code on the display.<br />
+            2. Tap the link that appears.<br />
+            3. Pay with <strong>Apple Pay</strong>,
+            <strong>Google Pay</strong> or a card.
+          </p>
+          <p style="font-size: 10.5pt">No app needed for this one.</p>
+        </div>
+
+        <div class="opt">
+          <h3>Option C &mdash; No code on the screen? Use the free app</h3>
+          <p>
+            1. <strong>Install the app</strong> &mdash; scan the code below for
+            your phone.<br />
+            2. Stand <strong>within 3 metres (10 feet)</strong> of this
+            machine.<br />
+            3. Open the app and tap <strong>Scan</strong>. It looks for machines
+            nearby.<br />
+            4. Pick this machine from the list, check the amount, and pay.
+          </p>
+
+          <div class="dl">
+            <div class="box">
+              <svg
+                class="qr"
+                viewBox="0 0 41 41"
+                style="width: 36mm; height: 36mm"
+                xmlns="http://www.w3.org/2000/svg"
+                shape-rendering="crispEdges"
+              >
+                <rect width="41" height="41" fill="#fff" />
+                <path
+                  stroke="#1F1F1F"
+                  fill="none"
+                  d="M2 2.5h7m1 0h1m2 0h1m2 0h1m1 0h2m1 0h1m1 0h1m1 0h1m6 0h7m-37 1h1m5 0h1m1 0h2m3 0h1m1 0h1m7 0h1m2 0h3m1 0h1m5 0h1m-37 1h1m1 0h3m1 0h1m1 0h1m1 0h2m4 0h1m1 0h3m1 0h2m3 0h2m1 0h1m1 0h3m1 0h1m-37 1h1m1 0h3m1 0h1m2 0h7m4 0h2m2 0h2m1 0h1m2 0h1m1 0h3m1 0h1m-37 1h1m1 0h3m1 0h1m9 0h1m2 0h1m1 0h1m1 0h4m3 0h1m1 0h3m1 0h1m-37 1h1m5 0h1m1 0h11m2 0h8m1 0h1m5 0h1m-37 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-29 1h2m2 0h3m4 0h1m1 0h1m3 0h1m2 0h1m-27 1h3m1 0h1m1 0h4m2 0h2m1 0h1m4 0h3m1 0h1m2 0h3m2 0h3m-37 1h1m1 0h1m1 0h1m2 0h1m1 0h2m3 0h1m1 0h1m2 0h1m2 0h4m1 0h1m1 0h1m3 0h2m-32 1h1m1 0h2m1 0h2m3 0h1m1 0h3m4 0h1m2 0h3m2 0h4m2 0h1m-37 1h1m1 0h1m1 0h1m2 0h2m3 0h1m3 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h2m2 0h2m1 0h1m1 0h2m-37 1h1m1 0h1m2 0h2m3 0h3m2 0h3m2 0h2m1 0h5m1 0h4m1 0h2m-36 1h1m4 0h1m1 0h2m1 0h1m2 0h4m1 0h1m2 0h5m2 0h2m1 0h1m1 0h3m-35 1h1m1 0h1m2 0h2m1 0h2m2 0h2m1 0h2m1 0h1m3 0h6m1 0h1m2 0h1m1 0h2m-36 1h1m2 0h2m1 0h1m1 0h1m3 0h1m4 0h3m2 0h2m2 0h1m2 0h1m5 0h1m-34 1h1m2 0h1m3 0h4m1 0h3m1 0h3m3 0h2m2 0h4m1 0h1m1 0h1m-37 1h1m3 0h1m3 0h1m2 0h4m5 0h4m4 0h2m1 0h1m1 0h1m-31 1h2m1 0h2m1 0h1m1 0h3m2 0h1m2 0h2m1 0h2m1 0h3m2 0h2m2 0h3m-33 1h2m1 0h2m2 0h1m1 0h3m1 0h1m2 0h5m2 0h2m1 0h1m2 0h1m1 0h1m-36 1h4m1 0h3m2 0h4m7 0h1m2 0h2m4 0h7m-36 1h3m3 0h3m2 0h3m1 0h2m2 0h5m1 0h1m4 0h1m2 0h2m-35 1h2m1 0h3m1 0h1m4 0h2m1 0h2m1 0h1m2 0h3m2 0h1m2 0h1m3 0h1m1 0h1m-34 1h1m1 0h1m2 0h3m2 0h2m6 0h3m2 0h1m2 0h3m3 0h1m-36 1h1m2 0h1m1 0h3m2 0h5m1 0h1m4 0h1m1 0h1m6 0h7m-37 1h1m1 0h2m1 0h1m1 0h7m1 0h1m3 0h1m1 0h2m1 0h1m1 0h2m1 0h1m-30 1h1m1 0h1m1 0h3m3 0h1m2 0h1m2 0h3m1 0h2m5 0h1m2 0h2m2 0h3m-37 1h1m1 0h1m1 0h1m2 0h2m2 0h2m2 0h3m1 0h1m1 0h1m2 0h1m1 0h4m2 0h2m1 0h1m-36 1h1m1 0h1m3 0h1m3 0h1m2 0h2m2 0h1m7 0h8m1 0h2m-28 1h3m1 0h3m1 0h3m1 0h1m2 0h2m1 0h3m3 0h1m2 0h1m-36 1h7m5 0h1m1 0h5m2 0h2m1 0h2m2 0h1m1 0h1m1 0h2m1 0h2m-37 1h1m5 0h1m2 0h2m1 0h2m3 0h1m2 0h2m4 0h1m1 0h1m3 0h1m3 0h1m-37 1h1m1 0h3m1 0h1m1 0h1m2 0h2m1 0h3m1 0h1m2 0h2m1 0h9m1 0h1m1 0h1m-37 1h1m1 0h3m1 0h1m1 0h2m2 0h1m2 0h1m5 0h1m6 0h1m1 0h3m1 0h1m-35 1h1m1 0h3m1 0h1m1 0h2m2 0h1m4 0h2m1 0h2m1 0h4m1 0h2m1 0h1m1 0h2m1 0h1m-37 1h1m5 0h1m3 0h4m1 0h2m1 0h1m3 0h2m2 0h3m1 0h2m4 0h1m-37 1h7m3 0h2m4 0h2m2 0h4m1 0h1m4 0h1m2 0h4"
+                />
+              </svg>
+              <p class="cap">iPhone<span>App Store</span></p>
+            </div>
+            <div class="box">
+              <svg
+                class="qr"
+                viewBox="0 0 49 49"
+                style="width: 36mm; height: 36mm"
+                xmlns="http://www.w3.org/2000/svg"
+                shape-rendering="crispEdges"
+              >
+                <rect width="49" height="49" fill="#fff" />
+                <path
+                  stroke="#1F1F1F"
+                  fill="none"
+                  d="M2 2.5h7m1 0h2m1 0h2m1 0h3m1 0h3m1 0h3m2 0h7m2 0h1m1 0h7m-45 1h1m5 0h1m1 0h1m3 0h1m2 0h2m1 0h1m7 0h3m1 0h1m2 0h1m1 0h1m2 0h1m5 0h1m-45 1h1m1 0h3m1 0h1m2 0h1m1 0h1m1 0h3m5 0h4m2 0h2m2 0h2m2 0h1m2 0h1m1 0h3m1 0h1m-45 1h1m1 0h3m1 0h1m1 0h3m2 0h1m2 0h1m2 0h2m3 0h2m2 0h1m1 0h1m2 0h1m1 0h2m1 0h1m1 0h3m1 0h1m-45 1h1m1 0h3m1 0h1m1 0h1m1 0h4m1 0h3m2 0h6m3 0h2m1 0h5m1 0h1m1 0h3m1 0h1m-45 1h1m5 0h1m1 0h3m3 0h2m2 0h1m1 0h1m3 0h2m1 0h1m1 0h5m4 0h1m5 0h1m-45 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-35 1h5m3 0h3m3 0h1m3 0h1m3 0h1m2 0h1m-33 1h1m2 0h1m3 0h2m1 0h5m1 0h7m1 0h2m1 0h1m2 0h1m5 0h3m1 0h2m-45 1h1m2 0h3m1 0h2m2 0h1m1 0h1m1 0h1m1 0h1m2 0h1m1 0h1m5 0h1m4 0h1m1 0h1m3 0h6m-45 1h1m1 0h1m3 0h1m1 0h1m6 0h2m1 0h1m3 0h4m1 0h1m1 0h1m4 0h1m1 0h2m3 0h2m1 0h1m-45 1h2m2 0h2m1 0h1m4 0h1m1 0h1m1 0h5m4 0h2m2 0h3m2 0h2m1 0h2m1 0h2m2 0h1m-45 1h3m1 0h3m1 0h4m1 0h2m1 0h1m1 0h1m2 0h1m3 0h2m1 0h1m2 0h2m2 0h1m2 0h1m1 0h1m3 0h1m-43 1h2m1 0h1m1 0h1m1 0h2m1 0h2m11 0h1m1 0h2m5 0h1m2 0h1m3 0h2m1 0h1m-42 1h1m2 0h1m2 0h1m3 0h3m3 0h1m1 0h1m1 0h1m2 0h3m2 0h1m3 0h4m1 0h4m-44 1h4m1 0h1m1 0h4m2 0h1m1 0h3m1 0h1m1 0h4m2 0h3m1 0h3m1 0h1m3 0h2m2 0h1m-41 1h2m1 0h3m1 0h3m3 0h1m2 0h3m4 0h1m3 0h3m8 0h1m2 0h1m-44 1h1m1 0h1m3 0h1m1 0h1m4 0h1m1 0h1m2 0h2m2 0h1m2 0h1m2 0h1m2 0h1m5 0h1m2 0h1m1 0h1m-44 1h2m4 0h4m1 0h4m1 0h1m3 0h3m3 0h1m1 0h2m1 0h1m1 0h1m1 0h2m2 0h3m1 0h2m-43 1h2m3 0h1m4 0h3m1 0h2m3 0h4m4 0h1m2 0h1m4 0h3m4 0h1m-45 1h9m2 0h2m2 0h4m1 0h6m1 0h5m1 0h9m1 0h2m-41 1h1m3 0h4m6 0h3m3 0h4m1 0h1m1 0h1m4 0h1m3 0h1m1 0h3m-45 1h3m1 0h1m1 0h1m1 0h2m2 0h1m1 0h2m4 0h1m1 0h1m1 0h1m2 0h1m2 0h1m3 0h1m1 0h1m1 0h1m1 0h2m2 0h1m-45 1h1m2 0h2m3 0h2m1 0h1m3 0h1m2 0h3m3 0h2m1 0h2m2 0h1m2 0h1m1 0h1m3 0h2m1 0h2m-45 1h1m1 0h7m4 0h12m1 0h1m1 0h1m1 0h3m3 0h6m2 0h1m-45 1h1m1 0h1m4 0h1m1 0h3m1 0h3m1 0h1m2 0h3m2 0h1m1 0h2m2 0h1m2 0h1m2 0h2m1 0h3m1 0h1m-45 1h1m2 0h1m2 0h1m1 0h2m2 0h1m2 0h1m6 0h1m3 0h1m1 0h2m2 0h1m4 0h1m1 0h1m2 0h2m-42 1h4m2 0h2m3 0h2m1 0h2m2 0h3m2 0h3m1 0h4m1 0h1m2 0h2m1 0h1m3 0h1m-43 1h3m1 0h1m2 0h1m1 0h2m2 0h1m1 0h3m1 0h4m2 0h1m2 0h1m1 0h3m1 0h1m2 0h2m2 0h2m-44 1h1m1 0h1m1 0h1m1 0h1m3 0h3m1 0h2m4 0h1m1 0h2m1 0h1m1 0h1m1 0h1m4 0h2m4 0h3m-43 1h1m1 0h7m2 0h4m1 0h1m2 0h1m1 0h1m2 0h1m2 0h1m2 0h1m1 0h1m1 0h4m1 0h1m2 0h2m-45 1h1m1 0h2m1 0h1m2 0h1m1 0h1m3 0h2m2 0h1m2 0h1m3 0h3m4 0h3m1 0h1m1 0h1m1 0h1m-41 1h2m4 0h2m1 0h2m1 0h1m1 0h5m1 0h1m1 0h2m3 0h1m1 0h3m1 0h1m1 0h1m1 0h3m3 0h1m-44 1h4m1 0h1m3 0h4m2 0h1m2 0h7m2 0h1m4 0h1m2 0h1m2 0h1m5 0h1m-41 1h1m1 0h3m1 0h5m1 0h5m1 0h1m1 0h6m4 0h2m2 0h1m3 0h1m1 0h1m-44 1h4m3 0h2m1 0h1m1 0h1m2 0h2m2 0h3m1 0h1m6 0h1m1 0h1m1 0h3m3 0h1m-42 1h1m2 0h2m1 0h1m2 0h1m1 0h1m5 0h9m1 0h3m1 0h3m2 0h6m2 0h1m-37 1h4m1 0h3m2 0h1m1 0h1m3 0h1m2 0h1m1 0h6m1 0h1m3 0h1m1 0h1m1 0h1m-45 1h7m3 0h1m3 0h2m3 0h2m1 0h1m1 0h1m1 0h2m1 0h1m1 0h2m2 0h2m1 0h1m1 0h1m-41 1h1m5 0h1m2 0h1m1 0h4m1 0h3m1 0h1m3 0h2m1 0h2m2 0h3m1 0h2m3 0h1m-41 1h1m1 0h3m1 0h1m2 0h2m2 0h1m1 0h2m1 0h8m1 0h2m1 0h1m1 0h3m1 0h5m2 0h1m-44 1h1m1 0h3m1 0h1m1 0h1m1 0h3m2 0h1m2 0h3m2 0h1m4 0h2m1 0h2m3 0h3m1 0h1m2 0h2m-45 1h1m1 0h3m1 0h1m3 0h1m1 0h2m1 0h2m1 0h3m3 0h3m3 0h1m1 0h1m2 0h3m1 0h2m2 0h2m-45 1h1m5 0h1m3 0h3m1 0h4m1 0h1m2 0h1m2 0h2m2 0h4m2 0h1m3 0h2m-41 1h7m2 0h2m4 0h1m2 0h1m1 0h3m1 0h3m1 0h4m1 0h2m2 0h3m1 0h1m1 0h1"
+                />
+              </svg>
+              <p class="cap">Android<span>Google Play</span></p>
+            </div>
+          </div>
+          <p style="font-size: 10pt">
+            If a code will not scan, search your app store by name: on
+            <strong>iPhone</strong> search <strong>Scan-&gt;Pay</strong>, on
+            <strong>Android</strong> search <strong>ScanPay</strong>. Both are
+            published by <strong>Sintron</strong>.
+          </p>
+        </div>
+      </section>
+
+      <footer>
+        Sintron Technology &middot; Tainan, Taiwan &nbsp;|&nbsp;
+        <a href="mailto:sales@sintron-hk.com">sales@sintron-hk.com</a>
+        &nbsp;|&nbsp;
+        <a href="https://sintron-hk.com" target="_blank" rel="noopener"
+          >sintron-hk.com</a
+        >
+      </footer>
+    </div>
+
+    <script>
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "en",
+            includedLanguages: "en,zh-TW,zh-CN,es,fr,de,ja,ko,el,it,ar",
+            autoDisplay: false,
+          },
+          "google_translate_element",
+        );
+        setTimeout(syncGTCombo, 800);
+      }
+      function syncGTCombo() {
+        var gtCombo = document.querySelector(".goog-te-combo");
+        if (!gtCombo) return;
+        var ourSel = document.getElementById("lang-select");
+        if (gtCombo.value && gtCombo.value !== "en") {
+          for (var i = 0; i < ourSel.options.length; i++) {
+            if (ourSel.options[i].value === gtCombo.value) {
+              ourSel.selectedIndex = i;
+              break;
+            }
+          }
+        }
+      }
+      function changeLanguage(lang) {
+        var gtCombo = document.querySelector(".goog-te-combo");
+        if (!gtCombo) {
+          setTimeout(function () {
+            changeLanguage(lang);
+          }, 600);
+          return;
+        }
+        if (lang === "en") {
+          // 先用小工具本身還原原文（不需 cookie，本機開檔也有效）
+          gtCombo.value = "";
+          gtCombo.dispatchEvent(new Event("change"));
+          // 線上環境再用 cookie + reload 徹底清乾淨
+          if (location.protocol === "http:" || location.protocol === "https:") {
+            document.cookie =
+              "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+            document.cookie =
+              "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=." +
+              location.hostname;
+            setTimeout(function () {
+              location.reload();
+            }, 150);
+          }
+          return;
+        }
+        gtCombo.value = lang;
+        gtCombo.dispatchEvent(new Event("change"));
+      }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </body>
+</html>
